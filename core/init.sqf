@@ -7,45 +7,23 @@
     Master client initialization file
 */
 
-private["_handle","_timeStamp","_server_isReady","_extDB_notLoaded"];
-
-if (life_HC_isActive) then {
-    _server_isReady = life_HC_server_isReady;
-    _extDB_notLoaded = life_HC_server_extDB_notLoaded;
-} else {
-    _server_isReady = life_server_isReady;
-    _extDB_notLoaded = life_server_extDB_notLoaded;
-};
-
+private ["_handle","_timeStamp","_server_isReady","_extDB_notLoaded"];
 life_firstSpawn = true;
 life_session_completed = false;
-0 cutText["Setting up client, please wait...","BLACK FADED"];
+0 cutText[localize "STR_Init_ClientSetup","BLACK FADED"];
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log "--------------------------------- Starting Altis Life Client Init ----------------------------------";
-diag_log "------------------------------------------ Version 4.4r4 -------------------------------------------";
+diag_log "------------------------------------------ Version 5.0.0 -------------------------------------------";
 diag_log "----------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
-[] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
+[] call compile preprocessFileLineNumbers "core\clientValidator.sqf";
 enableSentences false;
 
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
-[] call compile PreprocessFileLineNumbers "core\configuration.sqf";
-
-//Set bank amount for new players
-switch (playerSide) do {
-    case west: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
-    };
-    case civilian: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
-    };
-    case independent: {
-        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
-    };
-};
+[] call compile preprocessFileLineNumbers "core\configuration.sqf";
 
 diag_log "::Life Client:: Variables initialized";
 diag_log "::Life Client:: Setting up Eventhandlers";
@@ -60,26 +38,48 @@ diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil "TON_fnc_clientGangLeader")};
 
 diag_log "::Life Client:: Received server functions.";
-0 cutText ["Waiting for the server to be ready...","BLACK FADED"];
+0 cutText [localize "STR_Init_ServerReady","BLACK FADED"];
 0 cutFadeOut 99999999;
 
 diag_log "::Life Client:: Waiting for the server to be ready..";
-waitUntil{!isNil "_server_isReady"};
-waitUntil{(_server_isReady || !isNil "_extDB_notLoaded")};
+waitUntil{!isNil "life_HC_isActive"};
+if (life_HC_isActive) then {
+    waitUntil{!isNil "life_HC_server_isReady" && !isNil "life_HC_server_extDB_notLoaded"};
+    _server_isReady = life_HC_server_isReady;
+    _extDB_notLoaded = life_HC_server_extDB_notLoaded;
+} else {
+    waitUntil{!isNil "life_server_isReady" && !isNil "life_server_extDB_notLoaded"};
+    _server_isReady = life_server_isReady;
+    _extDB_notLoaded = life_server_extDB_notLoaded;
+};
 
-if (!isNil "_extDB_notLoaded" && {_extDB_notLoaded isEqualType []}) exitWith {
-    diag_log _extDB_notLoaded;
-    999999 cutText ["extDB failed to load, please contact an administrator.","BLACK FADED"];
+waitUntil{_server_isReady};
+if (_extDB_notLoaded isEqualType []) exitWith {
+    diag_log (_extDB_notLoaded select 1);
+    999999 cutText [localize "STR_Init_ExtdbFail","BLACK FADED"];
     999999 cutFadeOut 99999999;
 };
 
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
-0 cutText["Finishing client setup procedure","BLACK FADED"];
+0 cutText[localize "STR_Init_ClientFinish","BLACK FADED"];
 0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
+
+//Set bank amount for new players
+switch (playerSide) do {
+    case west: {
+        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_cop");
+    };
+    case civilian: {
+        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
+    };
+    case independent: {
+        life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
+    };
+};
 
 switch (playerSide) do {
     case west: {
@@ -113,7 +113,7 @@ diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
 player addRating 99999999;
 
-[player,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
+[player,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_manageSC",RSERV];
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
 
@@ -147,16 +147,23 @@ publicVariableServer "life_fnc_RequestClientId"; //Variable OwnerID for Headless
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 0) then {player enableFatigue false;};
 
-if (LIFE_SETTINGS(getNumber,"pump_service") isEqualTo 1) then{
+if (LIFE_SETTINGS(getNumber,"pump_service") isEqualTo 1) then {
     [] execVM "core\fn_setupStationService.sqf";
 };
 
 if (life_HC_isActive) then {
-    [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["HC_fnc_wantedProfUpdate",HC_Life];
+    [getPlayerUID player,player getVariable ["realname",name player]] remoteExec ["HC_fnc_wantedProfUpdate",HC_Life];
 } else {
-    [getPlayerUID player,player getVariable["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
+    [getPlayerUID player,player getVariable ["realname",name player]] remoteExec ["life_fnc_wantedProfUpdate",RSERV];
 };
 
+life_hideoutBuildings = [];
+{
+    private _building = nearestBuilding getMarkerPos _x;
+    life_hideoutBuildings pushBack _building;
+    false
+} count ["gang_area_1","gang_area_2","gang_area_3"];
+
 diag_log "----------------------------------------------------------------------------------------------------";
-diag_log format["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
+diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";

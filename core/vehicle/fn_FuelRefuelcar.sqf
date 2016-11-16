@@ -1,13 +1,13 @@
 #include "..\..\script_macros.hpp"
 /*
-    File: fn_RefuelCar.sqf
+    File: fn_fuelRefuelCar.sqf
     Author: NiiRoZz
 
     Description:
-    Add fuel in car.
+    Adds fuel in car.
 */
 disableSerialization;
-private["_control","_index","_className","_basePrice","_vehicleInfo","_colorArray","_ctrl"];
+private ["_control","_index","_className","_basePrice","_vehicleInfo","_colorArray","_ctrl"];
 _classname = lbData[20302,(lbCurSel 20302)];
 _index =  lbValue[20302,(lbCurSel 20302)];
 
@@ -39,11 +39,11 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
     life_is_processing = true;
     //Setup our progress bar.
     disableSerialization;
-    5 cutRsc ["life_progress","PLAIN"];
+    "progressBar" cutRsc ["life_progress","PLAIN"];
     _ui = uiNameSpace getVariable "life_progress";
     _progress = _ui displayCtrl 38201;
     _pgText = _ui displayCtrl 38202;
-    _pgText ctrlSetText format["%2 (1%1)...","%","Refuel:"];
+    _pgText ctrlSetText format ["%2 (1%1)...","%","Refuel:"];
     _progress progressSetPosition 0.01;
     _cP = 0.01;
     _tp =0;
@@ -52,7 +52,7 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
         sleep  _timer;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
-        _pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%","Refuel:"];
+        _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%","Refuel:"];
         if (_cP >= 1) exitWith {};
         if (player distance _car > 10) exitWith {};
         if (vehicle player != player) exitWith {};
@@ -64,7 +64,7 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
             [_car,_cp * _setfuell] remoteExecCall ["life_fnc_setFuel",_car];
         };
     };
-    5 cutText ["","PLAIN"];
+    "progressBar" cutText ["","PLAIN"];
     if (_car distance player > 10 || vehicle player != player) then {
         hint localize "STR_Distance_Vehicle_Pump";
         vehiclefuelList = [];

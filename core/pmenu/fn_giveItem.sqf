@@ -8,13 +8,13 @@
     removes the item & amount of it from the players virtual
     inventory.
 */
-private["_unit","_val"];
+private ["_unit","_val"];
 _val = ctrlText 2010;
 ctrlShow[2002,false];
 if ((lbCurSel 2023) isEqualTo -1) exitWith {hint localize "STR_NOTF_noOneSelected";
 ctrlShow[2002,true];};
 _unit = lbData [2023,lbCurSel 2023];
-_unit = call compile format["%1",_unit];
+_unit = call compile format ["%1",_unit];
 
 if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_NOTF_didNotSelectItemToGive";ctrlShow[2002,true];};
 
@@ -31,7 +31,7 @@ if (!([false,_item,(parseNumber _val)] call life_fnc_handleInv)) exitWith {hint 
 
 [_unit,_val,_item,player] remoteExecCall ["life_fnc_receiveItem",_unit];
 _type = M_CONFIG(getText,"VirtualItems",_item,"displayName");
-hint format [localize "STR_NOTF_youGaveItem",_unit getVariable["realname",name _unit],_val,(localize _type)];
+hint format [localize "STR_NOTF_youGaveItem",_unit getVariable ["realname",name _unit],_val,(localize _type)];
 [] call life_fnc_p_updateMenu;
 
 ctrlShow[2002,true];

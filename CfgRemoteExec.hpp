@@ -13,9 +13,10 @@ class CfgRemoteExec {
         jip = 0;
 
         /* Client only functions */
+        F(life_fnc_AAN,CLIENT)
         F(life_fnc_addVehicle2Chain,CLIENT)
-        F(life_fnc_adminid,CLIENT)
-        F(life_fnc_admininfo,CLIENT)
+        F(life_fnc_adminID,CLIENT)
+        F(life_fnc_adminInfo,CLIENT)
         F(life_fnc_bountyReceive,CLIENT)
         F(life_fnc_copLights,CLIENT)
         F(life_fnc_copSearch,CLIENT)
@@ -92,7 +93,7 @@ class CfgRemoteExec {
         F(TON_fnc_getVehicles,SERVER)
         F(TON_fnc_insertGang,SERVER)
         F(TON_fnc_keyManagement,SERVER)
-        F(TON_fnc_managesc,SERVER)
+        F(TON_fnc_manageSC,SERVER)
         F(TON_fnc_pickupAction,SERVER)
         F(TON_fnc_removeGang,SERVER)
         F(TON_fnc_sellHouse,SERVER)
@@ -107,6 +108,8 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleDelete,SERVER)
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
+        F(TON_fnc_handleBlastingCharge,SERVER)
+        F(TON_fnc_houseGarage,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -114,6 +117,7 @@ class CfgRemoteExec {
         F(HC_fnc_chopShopSell,HC)
         F(HC_fnc_deleteDBContainer,HC)
         F(HC_fnc_getVehicles,HC)
+        F(HC_fnc_houseGarage,HC)
         F(HC_fnc_insertGang,HC)
         F(HC_fnc_insertRequest,HC)
         F(HC_fnc_insertVehicle,HC)
