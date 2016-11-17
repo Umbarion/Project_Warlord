@@ -7,7 +7,7 @@
         Description:
         Same as fn_gather,but it allows use of probabilities for mining.
     */
-private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
+private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined", "_mags"];
 if (life_action_inUse) exitWith {};
 if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {
@@ -64,9 +64,9 @@ if (_zone isEqualTo "") exitWith {
 };
 
 if (_requiredItem != "") then {
-    _valItem = missionNamespace getVariable "life_inv_" + _requiredItem;
+    _mags=magazines player;
 
-    if (_valItem < 1) exitWith {
+    if !(_requiredItem in _mags) exitWith {
         switch (_requiredItem) do {
             case "pickaxe": {
                 titleText[(localize "STR_NOTF_Pickaxe"), "PLAIN"];
@@ -82,8 +82,7 @@ if (_exit) exitWith {
 };
 
 _amount = round(random(_maxGather)) + 1;
-_diff = [_mined, _amount, life_carryWeight, life_maxWeight] call life_fnc_calWeightDiff;
-if (_diff isEqualTo 0) exitWith {
+if !(player canAdd [_mined, _amount]) exitWith {
     hint localize "STR_NOTF_InvFull";
     life_action_inUse = false;
 };
@@ -97,9 +96,9 @@ for "_i" from 0 to 4 do {
     sleep 0.5;
 };
 
-if (([true, _mined, _diff] call life_fnc_handleInv)) then {
-    _itemName = M_CONFIG(getText, "VirtualItems", _mined, "displayName");
-    titleText[format [localize "STR_NOTF_Mine_Success", (localize _itemName), _diff], "PLAIN"];
+if (([true, _mined, _amount] call life_fnc_handleInv)) then {
+    //_itemName = M_CONFIG(getText, "VirtualItems", _mined, "displayName");
+    titleText[format [localize "STR_NOTF_Mine_Success", (localize _mined), _amount], "PLAIN"];
 };
 
 sleep 2.5;
