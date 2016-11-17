@@ -3,7 +3,7 @@
         File: fn_mine.sqf
         Author: Devilfloh
         Editor: Dardo
-
+		Editor: Paini
         Description:
         Same as fn_gather,but it allows use of probabilities for mining.
     */
@@ -82,7 +82,7 @@ if (_exit) exitWith {
 };
 
 _amount = round(random(_maxGather)) + 1;
-if !(player canAdd [_mined, _amount]) exitWith {
+if !((player canAdd [_mined, _amount])) exitWith {
     hint localize "STR_NOTF_InvFull";
     life_action_inUse = false;
 };
