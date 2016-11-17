@@ -18,7 +18,7 @@ if (life_spawn_point isEqualTo []) then {
             player setPos (getMarkerPos (_sp select 0));
         } else {
             _spawnPos = (call compile format ["%1",_sp select 0]) call BIS_fnc_selectRandom;
-            _spawnPos = _spawnPos buildingPos 0;
+         //   _spawnPos = _spawnPos buildingPos 0;
             player setPos _spawnPos;
         };
     } else {
@@ -45,7 +45,7 @@ if (life_spawn_point isEqualTo []) then {
             };
         } else {
             _spawnPos = (call compile format ["%1", life_spawn_point select 0]) call BIS_fnc_selectRandom;
-            _spawnPos = _spawnPos buildingPos 0;
+     //       _spawnPos = _spawnPos buildingPos 0;
             player setPos _spawnPos;
         };
     } else {
