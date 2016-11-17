@@ -1,36 +1,8 @@
 class CfgGather {
     class Resources {
-        class apple {
+        class templateres {
             amount = 5;
-            zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
-            item = "";
-            zoneSize = 30;
-        };
-
-        class peach {
-            amount = 5;
-            zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
-            item = "";
-            zoneSize = 30;
-        };
-
-        class heroin_unprocessed {
-            amount = 3;
-            zones[] = { "heroin_1" };
-            item = "";
-            zoneSize = 30;
-        };
-
-        class cocaine_unprocessed {
-            amount = 3;
-            zones[] = { "cocaine_1" };
-            item = "";
-            zoneSize = 30;
-        };
-
-        class cannabis {
-            amount = 3;
-            zones[] = { "weed_1" };
+            zones[] = { "template_1", "template_2", "template_3", "template_4" };
             item = "";
             zoneSize = 30;
         };
@@ -70,6 +42,45 @@ Example 2:
 */
 
     class Minerals {
+		class apple {
+            amount = 5;
+            zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
+            item = "";
+			mined[] = {"copper_unrefined"};
+            zoneSize = 30;
+        };
+
+        class peach {
+            amount = 5;
+            zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
+            item = "";
+			mined[] = {"copper_unrefined"};
+            zoneSize = 30;
+        };
+
+        class heroin_unprocessed {
+            amount = 3;
+            zones[] = { "heroin_1" };
+            item = "";
+			mined[] = {"copper_unrefined"};
+            zoneSize = 30;
+        };
+
+        class cocaine_unprocessed {
+            amount = 3;
+            zones[] = { "cocaine_1" };
+            item = "";
+			mined[] = {"copper_unrefined"};
+            zoneSize = 30;
+        };
+
+        class cannabis {
+            amount = 3;
+            zones[] = { "weed_1" };
+            item = "";
+			mined[] = {"copper_unrefined"};
+            zoneSize = 30;
+        };
         class copper_unrefined {
             amount = 2;
             zones[] = { "copper_mine" };
