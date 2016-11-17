@@ -207,6 +207,7 @@ class Life_Client_Core {
         class stripDownPlayer {};
         class tazeSound {};
         class teleport {};
+		class useItem{};
         class whereAmI {};
     };
 
