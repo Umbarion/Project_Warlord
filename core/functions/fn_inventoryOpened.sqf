@@ -38,6 +38,7 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
     hint localize "STR_NOTF_NoLootingPerson";
     true;
 };
+disableSerialization;
 waitUntil { !(isNull (findDisplay  602)) };
 ((findDisplay  602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Uniform
 ((findDisplay  602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Weste
