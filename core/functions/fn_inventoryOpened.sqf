@@ -39,7 +39,7 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
     true;
 };
 disableSerialization;
-waitUntil { (!isNull (findDisplay  602)) };
+//waitUntil { (!isNull (findDisplay  602)) };
 ((findDisplay  602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Uniform
 ((findDisplay  602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Weste
 ((findDisplay  602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Rucksack
