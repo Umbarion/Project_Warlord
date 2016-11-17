@@ -239,5 +239,116 @@ class CfgSpawnPoints {
         };
 
     };
+	class IslaDuala3 {
+        class Civilian {
+            class Kinsella {
+                displayName = "Kinsella";
+                spawnMarker = "civ_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
 
+            class Bolabongo {
+                displayName = "Bolabongo";
+                spawnMarker = "civ_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class Kirabo {
+                displayName = "Kirabo";
+                spawnMarker = "civ_spawn_2";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class Camara {
+                displayName = "Camara";
+                spawnMarker = "civ_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class RebelN {
+                displayName = "Northern Rebel Base";
+                spawnMarker = "Rebelop";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+
+            class RebelS {
+                displayName = "Southern Rebel Base";
+                spawnMarker = "Rebelop_1";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+
+            class RebelE {
+                displayName = "Eastern Rebel Base";
+                spawnMarker = "Rebelop_2";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+        };
+
+        class Cop {
+            class Kinsella {
+                displayName = "HQ Kinsella";
+                spawnMarker = "cop_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class Geheim {
+                displayName = "Geheim HQ";
+                spawnMarker = "cop_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
+                conditions = "";
+            };
+
+            class Kirabo {
+                displayName = "Kirabo HQ";
+                spawnMarker = "cop_spawn_2";
+                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "";
+            };
+
+            class Air {
+                displayName = "Air HQ";
+                spawnMarker = "cop_spawn_4";
+                icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
+                conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+            };
+
+            class Numbo {
+                displayName = "Numbo";
+                spawnMarker = "cop_spawn_5";
+                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "call life_coplevel >= 3";
+            };
+        };
+
+        class Medic {
+            class Kavala {
+                displayName = "Kavala Hospital";
+                spawnMarker = "medic_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class Athira {
+                displayName = "Athira Regional";
+                spawnMarker = "medic_spawn_2";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class Pyrgos {
+                displayName = "Pyrgos Hospital";
+                spawnMarker = "medic_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+        };
+    };
 };
