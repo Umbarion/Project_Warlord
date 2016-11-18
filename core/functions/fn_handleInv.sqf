@@ -24,7 +24,7 @@ if (_math) then {
     } else {_return = false;};
 } else {
     _value=({_x == _item} count magazines player);
-    if(_num<=value)then{
+    if(_num<=_value)then{
 	    for "_i" from 1 to _num do {
 		player removeMagazine _item;
 	    };
