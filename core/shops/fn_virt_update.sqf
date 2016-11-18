@@ -37,7 +37,7 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
 {
     _name = M_CONFIG(getText,"VirtualItems",_x,"displayName");
-    _val = ITEM_VALUE(_x);
+    _val = ({_x == _name} count magazines player);
 
     if (_val > 0) then {
         _gear_list lbAdd format ["%2 [x%1]",_val,(localize _name)];
