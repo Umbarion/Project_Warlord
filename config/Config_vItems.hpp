@@ -572,7 +572,7 @@ class VirtualItems {
 
     class PWA_beefjerky {
         variable = "PWA_beefjerky";
-        displayName = "STR_Item_"PWA_beefjerky";
+        displayName = "STR_Item_TBacon";
         weight = 1;
         buyPrice = 75;
         sellPrice = 25;
