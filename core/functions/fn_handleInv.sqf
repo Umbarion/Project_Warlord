@@ -23,7 +23,7 @@ if (_math) then {
 		_return=true;
     } else {_return = false;};
 } else {
-    _value=({_x == _item} count magazines player)
+    _value=({_x == _item} count magazines player);
     if(_num<=value)then{
 	    for "_i" from 1 to _num do {
 		player removeMagazine _item;
