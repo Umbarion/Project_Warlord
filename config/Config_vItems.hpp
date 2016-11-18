@@ -157,14 +157,14 @@ class VirtualItems {
     };
 
     class PWA_"PWA_defibrillator"" {
-        variable = "PWA_"PWA_defibrillator""";
-        displayName = "STR_Item_"PWA_defibrillator"";
+        variable = "PWA_defibrillator";
+        displayName = "STR_Item_defibrillator";
         weight = 4;
         buyPrice = 900;
         sellPrice = 450;
         illegal = false;
         edible = -1;
-        icon = "icons\ico_"PWA_defibrillator".paa";
+        icon = "icons\ico_defibrillator.paa";
     };
 
     class PWA_toolkit {
