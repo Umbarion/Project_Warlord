@@ -7,6 +7,15 @@
     For the mean time it blocks the player from opening another persons backpack
 */
 private ["_container","_unit","_list"];
+[]spawn{
+	disableSerialization;
+	waitUntil { !(isNull (findDisplay  602)) };
+	hint "penis";
+	((findDisplay  602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Uniform
+	((findDisplay  602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Weste
+	((findDisplay  602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Rucksack
+	((findDisplay  602) displayCtrl 640) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Container
+};
 if (count _this isEqualTo 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
@@ -38,12 +47,4 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
     hint localize "STR_NOTF_NoLootingPerson";
     true;
 };
-[]spawn{
-disableSerialization;
-waitUntil { !(isNull (findDisplay  602)) };
-hint "penis";
-((findDisplay  602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Uniform
-((findDisplay  602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Weste
-((findDisplay  602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Rucksack
-((findDisplay  602) displayCtrl 640) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Container
-};
+
