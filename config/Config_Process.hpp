@@ -18,40 +18,40 @@
 
 class ProcessAction {
     class oil {
-        MaterialsReq[] = {{"oil_unprocessed",1}};
-        MaterialsGive[] = {{"oil_processed",1}};
+        MaterialsReq[] = {{"PWA_oil_raw",1}};
+        MaterialsGive[] = {{"PWA_oil_processed",1}};
         Text = "STR_Process_Oil";
         //ScrollText = "Process Oil";
         NoLicenseCost = 1200;
     };
 
     class diamond {
-        MaterialsReq[] = {{"diamond_uncut",1}};
-        MaterialsGive[] = {{"diamond_cut",1}};
+        MaterialsReq[] = {{"PWA_diamond_raw",1}};
+        MaterialsGive[] = {{"PWA_diamond_processed",1}};
         Text = "STR_Process_Diamond";
         //ScrollText = "Cut Diamonds";
         NoLicenseCost = 1350;
     };
 
     class heroin {
-        MaterialsReq[] = {{"heroin_unprocessed",1}};
-        MaterialsGive[] = {{"heroin_processed",1}};
+        MaterialsReq[] = {{"PWA_heroin_raw",1}};
+        MaterialsGive[] = {{"PWA_heroin_processed",1}};
         Text = "STR_Process_Heroin";
         //ScrollText = "Process Heroin";
         NoLicenseCost = 1750;
     };
 
     class copper {
-        MaterialsReq[] = {{"copper_unrefined",1}};
-        MaterialsGive[] = {{"copper_refined",1}};
+        MaterialsReq[] = {{"PWA_copper_raw",1}};
+        MaterialsGive[] = {{"PWA_copper_processed",1}};
         Text = "STR_Process_Copper";
         //ScrollText = "Refine Copper";
         NoLicenseCost = 750;
     };
 
     class iron {
-        MaterialsReq[] = {{"iron_unrefined",1}};
-        MaterialsGive[] = {{"iron_refined",1}};
+        MaterialsReq[] = {{"PWA_iron_raw",1}};
+        MaterialsGive[] = {{"PWA_iron_processed",1}};
         Text = "STR_Process_Iron";
         //ScrollText = "Refine Iron";
         NoLicenseCost = 1120;
@@ -74,24 +74,24 @@ class ProcessAction {
     };
 
     class cocaine {
-        MaterialsReq[] = {{"cocaine_unprocessed",1}};
-        MaterialsGive[] = {{"cocaine_processed",1}};
+        MaterialsReq[] = {{"PWA_cocaine_raw",1}};
+        MaterialsGive[] = {{"PWA_cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
     };
 
     class marijuana {
-        MaterialsReq[] = {{"cannabis",1}};
-        MaterialsGive[] = {{"marijuana",1}};
+        MaterialsReq[] = {{"PWA_cannabis_raw",1}};
+        MaterialsGive[] = {{"PWA_cannabis_processed",1}};
         Text = "STR_Process_Marijuana";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 500;
     };
 
     class cement {
-        MaterialsReq[] = {{"rock",1}};
-        MaterialsGive[] = {{"cement",1}};
+        MaterialsReq[] = {{"PWA_stone_raw",1}};
+        MaterialsGive[] = {{"PWA_stone_processed",1}};
         Text = "STR_Process_Cement";
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
