@@ -6,7 +6,7 @@
     Description:
     Update and fill the virtual shop menu.
 */
-private ["_item_list","_gear_list","_shopItems","_name","_price"];
+private ["_item_list","_gear_list","_shopItems","_name","_price","_itemx"];
 disableSerialization;
 
 //Setup control vars.
@@ -37,7 +37,8 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
 {
     _name = M_CONFIG(getText,"VirtualItems",_x,"displayName");
-    _val = ({_x == _name} count magazines player);
+    _itemx=_x;
+    _val = ({_x == _itemx} count magazines player);
 
     if (_val > 0) then {
         _gear_list lbAdd format ["%2 [x%1]",_val,(localize _name)];
