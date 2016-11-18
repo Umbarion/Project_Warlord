@@ -6,7 +6,7 @@
     Description:
     Update and fill the virtual shop menu.
 */
-private ["_item_list","_gear_list","_shopItems","_name","_price","_itemx"];
+private ["_item_list","_gear_list","_shopItems","_name","_price","_itemx","_itemInfo","_gearInfo"];
 disableSerialization;
 
 //Setup control vars.
@@ -22,30 +22,25 @@ ctrlSetText[2403,localize (M_CONFIG(getText,"VirtualShops",life_shop_type,"name"
 _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
 {
-    _displayName = M_CONFIG(getText,"VirtualItems",_x,"displayName");
     _price = M_CONFIG(getNumber,"VirtualItems",_x,"buyPrice");
     if (!(_price isEqualTo -1)) then {
-        _item_list lbAdd format ["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
+		_itemInfo = [_x select 0] call life_fnc_fetchCfgDetails;
+        _item_list lbAdd format ["%1  ($%2)","%1",if (!((_x select 1) isEqualTo "")) then {_x select 1} else {_itemInfo select 1},[_price] call life_fnc_numberText];
         _item_list lbSetData [(lbSize _item_list)-1,_x];
         _item_list lbSetValue [(lbSize _item_list)-1,_price];
-        _icon = M_CONFIG(getText,"VirtualItems",_x,"icon");
-        if (!(_icon isEqualTo "")) then {
-            _item_list lbSetPicture [(lbSize _item_list)-1,_icon];
-        };
+		_item_list lbSetPicture [(lbSize _item_list)-1,_itemInfo select 2];
     };
 } forEach _shopItems;
 
 {
-    _name = M_CONFIG(getText,"VirtualItems",_x,"displayName");
+    
     _itemx=_x;
     _val = ({_x == _itemx} count magazines player);
 
     if (_val > 0) then {
-        _gear_list lbAdd format ["%2 [x%1]",_val,(localize _name)];
+		_gearInfo = [_x select 0] call life_fnc_fetchCfgDetails;
+        _gear_list lbAdd format ["%2 [x%1]",_val,if (!((_x select 1) isEqualTo "")) then {_x select 1} else {_gearInfo select 1}];
         _gear_list lbSetData [(lbSize _gear_list)-1,_x];
-        _icon = M_CONFIG(getText,"VirtualItems",_x,"icon");
-        if (!(_icon isEqualTo "")) then {
-            _gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
-        };
+        _gear_list lbSetPicture [(lbSize _gear_list)-1,_gearInfo select 2];
     };
 } forEach _shopItems;
