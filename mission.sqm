@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1190;
+		nextID=1201;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3653.4646,67.518295,2591.2139};
-		dir[]={0.47531563,-0.60590923,0.6379388};
-		up[]={0.36201707,0.79552913,0.48587734};
-		aside[]={0.80189705,1.8253922e-007,-0.59747809};
+		pos[]={2471.157,19.149294,9811.0723};
+		dir[]={0.78223795,-0.36442029,0.50528657};
+		up[]={0.3061153,0.93123347,0.19773528};
+		aside[]={0.54259843,-7.8929588e-008,-0.84000069};
 	};
 };
 binarizationWanted=0;
@@ -304,7 +304,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=755;
+		items=756;
 		class Item0
 		{
 			dataType="Marker";
@@ -1176,14 +1176,13 @@ class Mission
 		class Item82
 		{
 			dataType="Marker";
-			position[]={6268.1274,9.0622692,1277.0012};
+			position[]={6269.1812,9.0550518,1276.8389};
 			name="dp_1_21";
 			text="DP 6";
 			type="mil_box";
 			colorName="ColorYellow";
 			angle=89.242966;
 			id=83;
-			atlOffset=0.0072174072;
 		};
 		class Item83
 		{
@@ -2179,23 +2178,23 @@ class Mission
 		class Item177
 		{
 			dataType="Marker";
-			position[]={4238.2964,181.38893,6542.498};
+			position[]={4258.3843,181.38893,6576.1152};
 			name="medic_spawn_2";
 			type="Empty";
-			angle=19.370642;
+			angle=223.89555;
 			id=179;
-			atlOffset=166.47893;
+			atlOffset=161.1608;
 		};
 		class Item178
 		{
 			dataType="Marker";
-			position[]={2524.7495,8.0701523,9814.7969};
+			position[]={2537.3408,8.6443233,9787.8809};
 			name="atm_marker_3";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=186.33331;
+			angle=0.12567547;
 			id=180;
-			atlOffset=0.070152283;
+			atlOffset=0.070113182;
 		};
 		class Item179
 		{
@@ -2364,14 +2363,14 @@ class Mission
 		class Item195
 		{
 			dataType="Marker";
-			position[]={4242.7017,175.48804,6555.4658};
+			position[]={4256.3125,175.48804,6572.3984};
 			name="hospital_2";
 			text="@STR_MAR_Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=307.36597;
+			angle=230.97977;
 			id=197;
-			atlOffset=160.5835;
+			atlOffset=155.8739;
 		};
 		class Item196
 		{
@@ -2408,12 +2407,12 @@ class Mission
 		class Item199
 		{
 			dataType="Marker";
-			position[]={4246.2695,185.86485,6562.2568};
+			position[]={4249.8789,185.86485,6564.4126};
 			name="med_car_3";
 			type="Empty";
 			angle=302.68082;
 			id=201;
-			atlOffset=170.95859;
+			atlOffset=170.95497;
 		};
 		class Item200
 		{
@@ -2448,13 +2447,13 @@ class Mission
 		class Item203
 		{
 			dataType="Marker";
-			position[]={4237.8887,183.30922,6546.9512};
+			position[]={4254.5337,183.31575,6581.6333};
 			name="atm_marker_1_2";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=197.05725;
+			angle=45.469734;
 			id=205;
-			atlOffset=168.39922;
+			atlOffset=162.87747;
 		};
 		class Item204
 		{
@@ -14173,8 +14172,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2524.6431,9.2861481,9814.5576};
-				angles[]={0,0.096922889,0};
+				position[]={2537.4207,9.8603191,9788.1299};
+				angles[]={0,3.1301718,6.2826972};
 			};
 			side="Empty";
 			flags=4;
@@ -14834,8 +14833,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4237.979,16.196148,6547.3701};
-				angles[]={0,3.3655183,0};
+				position[]={4254.2549,16.20138,6581.3081};
+				angles[]={6.2791886,0.71981704,0};
 			};
 			side="Empty";
 			flags=4;
@@ -15550,19 +15549,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6277.3975,11.552887,9356.3262};
-				angles[]={0,0.00020129058,0};
+				position[]={6277.3975,11.553241,9356.3262};
+				angles[]={0,0.00020943952,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
 				name="mari_processor";
 			};
 			id=639;
 			type="Land_Sink_F";
-			atlOffset=3.2156467;
+			atlOffset=3.2160006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15584,7 +15583,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item527
@@ -16790,15 +16808,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3713.6438,8.5976391,9700.7725};
-				angles[]={0,4.9670801,0};
+				position[]={3713.644,8.5976391,9700.7725};
+				angles[]={0,4.9670844,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
 				name="coke_processor";
 			};
 			id=669;
@@ -16824,7 +16842,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item557
@@ -17788,19 +17825,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3437.9031,11.816171,9540.2178};
+				position[]={3437.9031,11.816639,9540.2178};
 				angles[]={0,2.9766765,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
 				name="heroin_processor";
 			};
 			id=699;
 			type="Land_Sink_F";
-			atlOffset=3.1985312;
+			atlOffset=3.1989994;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17822,7 +17859,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item581
@@ -25428,7 +25484,7 @@ class Mission
 			side="Civilian";
 			class Entities
 			{
-				items=140;
+				items=139;
 				class Item0
 				{
 					dataType="Object";
@@ -25516,8 +25572,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2532.134,8.0014391,9796.1914};
-						angles[]={0,4.6843529,0};
+						position[]={2540.2087,8.5742493,9790.4619};
+						angles[]={0,4.6843529,6.2826972};
 					};
 					side="Civilian";
 					flags=4;
@@ -25942,18 +25998,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8852.6611,14.687939,6568.8672};
-						angles[]={0,3.1718338,0};
+						position[]={8852.6611,14.688406,6568.8667};
+						angles[]={0,3.1718392,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilUnprocessed > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Oil"",life_fnc_processAction,""oil"",0,false,false,"""",'  !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""oil"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide isEqualTo civilian '];";
 					};
 					id=953;
 					type="C_man_1";
+					atlOffset=0.00046730042;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25994,7 +26051,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item9
@@ -26187,15 +26263,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4746.9463,14.941581,7992.9609};
-						angles[]={0.0009765625,4.667356,6.2822089};
+						position[]={4746.9458,14.941582,7992.9609};
+						angles[]={0.00097738439,4.6673598,6.282208};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Iron"",life_fnc_processAction,""iron"",0,false,false,"""",' life_inv_ironUnrefined > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""iron"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""iron"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !license_civ_iron && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Iron"",life_fnc_processAction,""iron"",0,false,false,"""",'  !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""iron"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""iron"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !license_civ_iron && playerSide isEqualTo civilian '];";
 					};
 					id=957;
 					type="C_man_1";
@@ -26239,7 +26315,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item13
@@ -26553,18 +26648,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={853.22906,31.651537,5226.9028};
-						angles[]={0,5.2470307,6.2823396};
+						position[]={853.229,31.651787,5226.9028};
+						angles[]={0,5.2470355,6.2823472};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide isEqualTo civilian '];";
 					};
 					id=963;
 					type="C_man_polo_3_F";
-					atlOffset=0.36675262;
+					atlOffset=0.36700249;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26605,7 +26700,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item19
@@ -29493,19 +29607,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8722.498,16.994768,1946.9596};
-						angles[]={0,1.5592004,6.2826972};
+						position[]={8722.7168,16.751438,1946.656};
+						angles[]={0,1.5592073,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Diamond"",life_fnc_processAction,""diamond"",0,false,false,"""",' life_inv_diamondUncut > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Diamond"",life_fnc_processAction,""diamond"",0,false,false,"""",'!life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide isEqualTo civilian '];";
 					};
 					id=1010;
 					type="C_man_1";
-					atlOffset=0.24333;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29546,7 +29659,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item65
@@ -29674,7 +29806,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6530.001,23.271439,2434.5745};
+						position[]={6530,23.271439,2434.574};
 						angles[]={0,3.8226378,0};
 					};
 					side="Civilian";
@@ -29682,7 +29814,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Copper"",life_fnc_processAction,""copper"",0,false,false,"""",' life_inv_copperUnrefined > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""copper"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""copper"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Copper"",life_fnc_processAction,""copper"",0,false,false,"""",'  !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""copper"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""copper"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !license_civ_copper && playerSide isEqualTo civilian '];";
 					};
 					id=1013;
 					type="C_man_1";
@@ -29726,7 +29858,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item68
@@ -29853,18 +30004,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5311.0405,12.730978,4627.4224};
-						angles[]={0,4.4245443,0};
+						position[]={5311.041,12.731439,4627.4229};
+						angles[]={0,4.4245491,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Process_Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""sand"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""sand"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !license_civ_sand && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Process_Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""sand"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""sand"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !license_civ_sand && playerSide isEqualTo civilian '];";
 					};
 					id=1016;
 					type="C_man_1";
+					atlOffset=0.00046062469;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29905,7 +30057,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item71
@@ -30054,15 +30225,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5579.0176,14.931439,7645.916};
-						angles[]={0,0.094375424,0};
+						position[]={5579.0181,14.931439,7645.916};
+						angles[]={0,0.094369955,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Salt"",life_fnc_processAction,""salt"",0,false,false,"""",' life_inv_saltUnrefined > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""salt"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""salt"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""salt"",0,false,false,"""",' !license_civ_salt && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Salt"",life_fnc_processAction,""salt"",0,false,false,"""",' !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""salt"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""salt"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""salt"",0,false,false,"""",' !license_civ_salt && playerSide isEqualTo civilian '];";
 					};
 					id=1019;
 					type="C_man_1";
@@ -30106,7 +30277,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item74
@@ -30418,18 +30608,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5436.5552,16.288767,1497.7473};
+						position[]={5436.5552,16.288437,1497.7471};
 						angles[]={0,4.1460648,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""heroin"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""heroin"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""heroin"",0,false,false,"""",' !license_civ_heroin && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""heroin"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""heroin"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""heroin"",0,false,false,"""",' !license_civ_heroin && playerSide isEqualTo civilian '];";
 					};
 					id=1025;
 					type="C_man_1";
+					atlOffset=0.88699913;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30470,7 +30660,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item80
@@ -30858,18 +31067,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8813.4512,18.293606,5395.3677};
-						angles[]={0,4.1570139,0};
+						position[]={8813.4512,18.293983,5395.3677};
+						angles[]={0,4.1570077,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cocaine"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cocaine"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cocaine"",0,false,false,"""",' !license_civ_cocaine && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cocaine"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cocaine"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cocaine"",0,false,false,"""",' !license_civ_cocaine && playerSide isEqualTo civilian '];";
 					};
 					id=1032;
 					type="C_man_1";
-					atlOffset=3.4096231;
+					atlOffset=3.4100008;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30910,7 +31119,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item87
@@ -31038,15 +31266,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1558.0586,52.211437,4033.6816};
-						angles[]={0,4.1908751,0};
+						position[]={1558.059,52.211437,4033.6821};
+						angles[]={0,4.1908669,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Process_Rock"",life_fnc_processAction,""cement"",0,false,false,"""",' life_inv_rock > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cement"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cement"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cement"",0,false,false,"""",' !license_civ_cement && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Process_Rock"",life_fnc_processAction,""cement"",0,false,false,"""",'!life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cement"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cement"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cement"",0,false,false,"""",' !license_civ_cement && playerSide isEqualTo civilian '];";
 					};
 					id=1035;
 					type="C_man_1";
@@ -31090,7 +31318,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item90
@@ -31720,87 +31967,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4235.959,14.911439,6543.3867};
-						angles[]={0,0.34037411,0};
-					};
-					side="Civilian";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide isEqualTo independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Athira Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Athira Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""med_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent ']; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""];";
-					};
-					id=1046;
-					type="B_RangeMaster_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item101
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2532.1697,8.0014391,9798.1768};
-						angles[]={0,4.7508459,0};
+						position[]={2540.2444,8.5742493,9792.4473};
+						angles[]={0,4.7508459,6.2826972};
 					};
 					side="Civilian";
 					flags=4;
@@ -31812,6 +31980,7 @@ class Mission
 					};
 					id=1047;
 					type="O_Soldier_F";
+					atlOffset=1.8119812e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31855,7 +32024,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item102
+				class Item101
 				{
 					dataType="Object";
 					class PositionInfo
@@ -31916,7 +32085,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item103
+				class Item102
 				{
 					dataType="Object";
 					class PositionInfo
@@ -31976,7 +32145,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item104
+				class Item103
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32036,7 +32205,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item105
+				class Item104
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32096,7 +32265,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item106
+				class Item105
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32156,7 +32325,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item107
+				class Item106
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32216,7 +32385,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item108
+				class Item107
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32276,7 +32445,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item109
+				class Item108
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32336,7 +32505,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item110
+				class Item109
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32397,7 +32566,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item111
+				class Item110
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32476,7 +32645,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item112
+				class Item111
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32537,7 +32706,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item113
+				class Item112
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32597,7 +32766,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item114
+				class Item113
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32657,7 +32826,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item115
+				class Item114
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32717,7 +32886,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item116
+				class Item115
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32777,7 +32946,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item117
+				class Item116
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32837,7 +33006,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item118
+				class Item117
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32897,7 +33066,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item119
+				class Item118
 				{
 					dataType="Object";
 					class PositionInfo
@@ -32957,7 +33126,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item120
+				class Item119
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33017,7 +33186,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item121
+				class Item120
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33077,7 +33246,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item122
+				class Item121
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33137,7 +33306,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item123
+				class Item122
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33198,7 +33367,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item124
+				class Item123
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33259,7 +33428,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item125
+				class Item124
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33319,7 +33488,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item126
+				class Item125
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33380,7 +33549,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item127
+				class Item126
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33478,7 +33647,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item128
+				class Item127
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33538,7 +33707,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item129
+				class Item128
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33598,7 +33767,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item130
+				class Item129
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33658,7 +33827,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item131
+				class Item130
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33718,7 +33887,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item132
+				class Item131
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33778,7 +33947,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item133
+				class Item132
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33839,7 +34008,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item134
+				class Item133
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33899,7 +34068,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item135
+				class Item134
 				{
 					dataType="Object";
 					class PositionInfo
@@ -33959,7 +34128,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item136
+				class Item135
 				{
 					dataType="Object";
 					class PositionInfo
@@ -34038,13 +34207,13 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item137
+				class Item136
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4233.9839,14.911439,6544.375};
-						angles[]={0,0.48359582,0};
+						position[]={4262.0005,14.911439,6573.3149};
+						angles[]={0,4.0532293,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -34117,7 +34286,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item138
+				class Item137
 				{
 					dataType="Object";
 					class PositionInfo
@@ -34156,7 +34325,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item139
+				class Item138
 				{
 					dataType="Object";
 					class PositionInfo
@@ -35318,6 +35487,98 @@ class Mission
 			b=800;
 			id=1176;
 			atlOffset=-8.1767254;
+		};
+		class Item755
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4260.6138,14.911439,6575.0337};
+						angles[]={0,3.9100075,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false; this allowDamage false; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide isEqualTo independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Athira Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Athira Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""med_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent ']; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""];";
+					};
+					id=1046;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1192;
 		};
 	};
 };
