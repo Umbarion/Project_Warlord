@@ -156,7 +156,7 @@ class VirtualItems {
         icon = "icons\ico_pickaxe.paa";
     };
 
-    class PWA_"PWA_defibrillator" {
+    class PWA_defibrillator {
         variable = "PWA_defibrillator";
         displayName = "STR_Item_defibrillator";
         weight = 4;
