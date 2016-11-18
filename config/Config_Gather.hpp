@@ -62,7 +62,7 @@ Example 2:
             amount = 3;
             zones[] = { "heroin_1" };
             item = "";
-			mined[] = {"copper_unrefined"};
+			mined[] = {"PWA_heroin_raw"};
             zoneSize = 30;
         };
 
@@ -70,7 +70,7 @@ Example 2:
             amount = 3;
             zones[] = { "cocaine_1" };
             item = "";
-			mined[] = {"copper_unrefined"};
+			mined[] = {"PWA_cocaine_raw"};
             zoneSize = 30;
         };
 
@@ -78,14 +78,14 @@ Example 2:
             amount = 3;
             zones[] = { "weed_1" };
             item = "";
-			mined[] = {"copper_unrefined"};
+			mined[] = {"PWA_cannabis_raw"};
             zoneSize = 30;
         };
         class copper_unrefined {
             amount = 2;
             zones[] = { "copper_mine" };
             item = "PWA_pickaxe";
-            mined[] = {"copper_unrefined"};
+            mined[] = {"PWA_copper_raw"};
             zoneSize = 30;
         };
 
@@ -93,7 +93,7 @@ Example 2:
             amount = 2;
             zones[] = { "iron_mine" };
             item = "PWA_pickaxe";
-            mined[] = { "iron_unrefined" };
+            mined[] = { "PWA_iron_raw" };
             zoneSize = 30;
         };
 
@@ -117,7 +117,7 @@ Example 2:
             amount = 2;
             zones[] = { "diamond_mine" };
             item = "PWA_pickaxe";
-            mined[] = { "diamond_uncut" };
+            mined[] = { "PWA_diamond_raw" };
             zoneSize = 30;
         };
 
@@ -125,7 +125,7 @@ Example 2:
             amount = 2;
             zones[] = { "rock_quarry" };
             item = "PWA_pickaxe";
-            mined[] = { "rock" };
+            mined[] = { "PWA_stone_raw" };
             zoneSize = 30;
         };
 
@@ -133,7 +133,7 @@ Example 2:
             amount = 2;
             zones[] = { "oil_field_1", "oil_field_2" };
             item = "PWA_pickaxe";
-            mined[] = { "oil_unprocessed" };
+            mined[] = { "PWA_oil_raw" };
             zoneSize = 30;
         };
     };
