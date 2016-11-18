@@ -112,7 +112,12 @@ class WeaponShops {
             { "Chemlight_red", "", 300, -1, "" },
             { "Chemlight_yellow", "", 300, 50, "" },
             { "Chemlight_green", "", 300, 50, "" },
-            { "Chemlight_blue", "", 300, 50, "" }
+            { "Chemlight_blue", "", 300, 50, "" },
+            { "PWA_pickaxe", "", 100, 100, "" },
+            { "PWA_shovel", "", 100, 10, "" },
+            { "PWA_secateurs", "", 100, 10, "" },
+            { "PWA_prospectingtools", "", 100, 10, "" },
+            { "PWA_drillingequipment", "", 100, 10, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -133,7 +138,12 @@ class WeaponShops {
             { "Chemlight_red", "", 1500, -1, "" },
             { "Chemlight_yellow", "", 1500, 50, "" },
             { "Chemlight_green", "", 1500, 50, "" },
-            { "Chemlight_blue", "", 1500, 50, "" }
+            { "Chemlight_blue", "", 1500, 50, "" },
+            { "PWA_pickaxe", "", 100, 100, "" },
+            { "PWA_shovel", "", 100, 10, "" },
+            { "PWA_secateurs", "", 100, 10, "" },
+            { "PWA_prospectingtools", "", 100, 10, "" },
+            { "PWA_drillingequipment", "", 100, 10, "" }
         };
         mags[] = {};
         accs[] = {};
