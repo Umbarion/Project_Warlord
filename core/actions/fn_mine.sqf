@@ -64,7 +64,7 @@ if (_zone isEqualTo "") exitWith {
 };
 
 if (_requiredItem != "") then {
-    if !((_requiredItem  in (assignedItems _x))) exitWith {
+    if !((_requiredItem  in (assignedItems player))) exitWith {
         switch (_requiredItem) do {
             case "pickaxe": {
                 titleText[(localize "STR_NOTF_Pickaxe"), "PLAIN"];

@@ -19,7 +19,7 @@ if (_fish isEqualTo []) exitWith {titleText[localize "STR_NOTF_NetDropFail","PLA
             case ((typeOf _x) isEqualTo "Ornate_random_F") : {_typeName = localize "STR_ANIM_Ornate"; _type = "PWA_ornate_raw";};
             case ((typeOf _x) isEqualTo "Mackerel_F") : {_typeName = localize "STR_ANIM_Mackerel"; _type = "PWA_mackerel_raw";};
             case ((typeOf _x) isEqualTo "Tuna_F") : {_typeName = localize "STR_ANIM_Tuna"; _type = "PWA_tuna_raw";};
-            case ((typeOf _x) isEqualTo "Mullet_F") : {_typeName = localize "STR_ANIM_Mullet"; _type = PWA_"mullet_raw";};
+            case ((typeOf _x) isEqualTo "Mullet_F") : {_typeName = localize "STR_ANIM_Mullet"; _type = "PWA_mullet_raw";};
             case ((typeOf _x) isEqualTo "CatShark_F") : {_typeName = localize "STR_ANIM_Catshark"; _type = "PWA_catshark_raw";};
             default {_type = "";};
         };
