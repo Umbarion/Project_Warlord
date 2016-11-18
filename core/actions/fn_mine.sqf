@@ -64,9 +64,7 @@ if (_zone isEqualTo "") exitWith {
 };
 
 if (_requiredItem != "") then {
-    _mags=magazines player;
-
-    if !(_requiredItem in _mags) exitWith {
+    if !((_requiredItem  in (assignedItems _x))) exitWith {
         switch (_requiredItem) do {
             case "pickaxe": {
                 titleText[(localize "STR_NOTF_Pickaxe"), "PLAIN"];

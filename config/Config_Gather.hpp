@@ -84,7 +84,7 @@ Example 2:
         class copper_unrefined {
             amount = 2;
             zones[] = { "copper_mine" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = {"copper_unrefined"};
             zoneSize = 30;
         };
@@ -92,7 +92,7 @@ Example 2:
         class iron_unrefined {
             amount = 2;
             zones[] = { "iron_mine" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "iron_unrefined" };
             zoneSize = 30;
         };
@@ -100,7 +100,7 @@ Example 2:
         class salt_unrefined {
             amount = 2;
             zones[] = { "salt_mine" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "salt_unrefined" };
             zoneSize = 30;
         };
@@ -108,7 +108,7 @@ Example 2:
         class sand {
             amount = 2;
             zones[] = { "sand_mine" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "sand" };
             zoneSize = 30;
         };
@@ -116,7 +116,7 @@ Example 2:
         class diamond_uncut {
             amount = 2;
             zones[] = { "diamond_mine" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "diamond_uncut" };
             zoneSize = 30;
         };
@@ -124,7 +124,7 @@ Example 2:
         class rock {
             amount = 2;
             zones[] = { "rock_quarry" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "rock" };
             zoneSize = 30;
         };
@@ -132,7 +132,7 @@ Example 2:
         class oil_unprocessed {
             amount = 2;
             zones[] = { "oil_field_1", "oil_field_2" };
-            item = "pickaxe";
+            item = "PWA_pickaxe";
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
         };
