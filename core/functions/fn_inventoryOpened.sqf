@@ -45,5 +45,5 @@ hint "penis";
 ((findDisplay  602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Uniform
 ((findDisplay  602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Weste
 ((findDisplay  602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Rucksack
-//((findDisplay  602) displayCtrl 640) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Container
+((findDisplay  602) displayCtrl 640) ctrlAddEventHandler ["LBDblClick", "_this spawn life_fnc_useItem"]; // Container
 };
