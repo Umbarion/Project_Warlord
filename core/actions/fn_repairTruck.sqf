@@ -11,7 +11,7 @@ _veh = cursorObject;
 life_interrupted = false;
 if (isNull _veh) exitWith {};
 if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) then {
-    if (life_inv_toolkit > 0) then {
+    if ("PWA_toolkit" in (magazines player)) then {
         life_action_inUse = true;
         _displayName = FETCH_CONFIG2(getText,"CfgVehicles",(typeOf _veh),"displayName");
         _upp = format [localize "STR_NOTF_Repairing",_displayName];
@@ -53,16 +53,16 @@ if ((_veh isKindOf "Car") || (_veh isKindOf "Ship") || (_veh isKindOf "Air")) th
 
         //Check if playerSide has infinite repair enabled
         if (playerSide isEqualTo civilian && (_sideRepairArray select 0) isEqualTo 0) then {
-            [false,"toolkit",1] call life_fnc_handleInv;
+            [false,"PWA_toolkit",1] call life_fnc_handleInv;
         };
         if (playerSide isEqualTo west && (_sideRepairArray select 1) isEqualTo 0) then {
-            [false,"toolkit",1] call life_fnc_handleInv;
+            [false,"PWA_toolkit",1] call life_fnc_handleInv;
         };
         if (playerSide isEqualTo independent && (_sideRepairArray select 2) isEqualTo 0) then {
-            [false,"toolkit",1] call life_fnc_handleInv;
+            [false,"PWA_toolkit",1] call life_fnc_handleInv;
         };
         if (playerSide isEqualTo east && (_sideRepairArray select 3) isEqualTo 0) then {
-            [false,"toolkit",1] call life_fnc_handleInv;
+            [false,"PWA_toolkit",1] call life_fnc_handleInv;
         };
 
         _veh setDamage 0;

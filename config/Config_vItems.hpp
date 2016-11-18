@@ -13,28 +13,28 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_storagecrate_small", "PWA_storagecrate_big" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "PWA_waterbottle",  "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_defibrillator" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "lockpick", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "lockpick", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
     };
 
     class wongs {
@@ -48,35 +48,35 @@ class VirtualShops {
         name = "STR_Shops_Coffee";
         side = "civ";
         conditions = "";
-        items[] = { "coffee", "donuts" };
+        items[] = { "PWA_coffee", "PWA_donuts" };
     };
 
     class f_station_coffee {
         name = "STR_Shop_Station_Coffee";
         side = "";
         conditions = "";
-        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull"};
+        items[] = { "PWA_coffee", "PWA_donuts", "PWA_energydrink", "PWA_toolkit", "PWA_jerrycan_full"};
     };
 
     class drugdealer {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+        items[] = { "PWA_cocaine_processed", "PWA_heroin_processed", "PWA_cannabis_processed" };
     };
 
     class oil {
         name = "STR_Shops_Oil";
         side = "civ";
         conditions = "";
-        items[] = { "oil_processed", "pickaxe", "fuelFull" };
+        items[] = { "PWA_oil_processed", "PWA_pickaxe", "PWA_jerrycan_full" };
     };
 
     class fishmarket {
         name = "STR_Shops_FishMarket";
         side = "civ";
         conditions = "";
-        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
+        items[] = { "PWA_salema_raw", "salema", "PWA_ornate_raw", "ornate", "PWA_mackerel_raw", "mackerel", "PWA_tuna_raw", "tuna", "PWA_mullet_raw", "mullet", "PWA_catshark_raw", "catshark" };
     };
 
     class glass {
@@ -90,14 +90,14 @@ class VirtualShops {
         name = "STR_Shops_Minerals";
         side = "civ";
         conditions = "";
-        items[] = { "iron_refined", "copper_refined" };
+        items[] = { "PWA_iron_processed", "PWA_copper_processed" };
     };
 
     class diamond {
         name = "STR_Shops_Diamond";
         side = "civ";
         conditions = "";
-        items[] = { "diamond_uncut", "diamond_cut" };
+        items[] = { "PWA_diamond_raw", "PWA_diamond_processed" };
     };
 
     class salt {
@@ -111,21 +111,21 @@ class VirtualShops {
         name = "STR_Shops_Cement";
         side = "civ";
         conditions = "";
-        items[] = { "cement" };
+        items[] = { "PWA_stone_processed" };
     };
 
     class gold {
         name = "STR_Shops_Gold";
         side = "civ";
         conditions = "";
-        items[] = { "goldbar" };
+        items[] = { "PWA_gold_processed" };
     };
 
     class cop {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "PWA_donuts", "PWA_coffee", "PWA_nailribbon", "PWA_waterbottle", "PWA_energydrink", "PWA_toolkit", "PWA_jerrycan_full", "defusekit", "PWA_defibrillator" };
     };
 };
 
@@ -145,8 +145,8 @@ class VirtualItems {
     //Virtual Items
 
     //Misc
-    class pickaxe {
-        variable = "pickaxe";
+    class PWA_pickaxe {
+        variable = "PWA_pickaxe";
         displayName = "STR_Item_Pickaxe";
         weight = 2;
         buyPrice = 750;
@@ -156,19 +156,19 @@ class VirtualItems {
         icon = "icons\ico_pickaxe.paa";
     };
 
-    class defibrillator {
-        variable = "defibrillator";
-        displayName = "STR_Item_Defibrillator";
+    class PWA_"PWA_defibrillator"" {
+        variable = "PWA_"PWA_defibrillator""";
+        displayName = "STR_Item_"PWA_defibrillator"";
         weight = 4;
         buyPrice = 900;
         sellPrice = 450;
         illegal = false;
         edible = -1;
-        icon = "icons\ico_defibrillator.paa";
+        icon = "icons\ico_"PWA_defibrillator".paa";
     };
 
-    class toolkit {
-        variable = "toolkit";
+    class PWA_toolkit {
+        variable = "PWA_toolkit";
         displayName = "STR_Item_Toolkit";
         weight = 4;
         buyPrice = 350;
@@ -178,8 +178,8 @@ class VirtualItems {
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
     };
 
-    class fuelEmpty {
-        variable = "fuelEmpty";
+    class PWA_jerrycan_empty {
+        variable = "PWA_jerrycan_empty";
         displayName = "STR_Item_FuelE";
         weight = 2;
         buyPrice = -1;
@@ -189,8 +189,8 @@ class VirtualItems {
         icon = "icons\ico_fuelEmpty.paa";
     };
 
-    class fuelFull {
-        variable = "fuelFull";
+    class PWA_jerrycan_full {
+        variable = "PWA_jerrycan_full";
         displayName = "STR_Item_FuelF";
         weight = 5;
         buyPrice = 850;
@@ -200,8 +200,8 @@ class VirtualItems {
         icon = "icons\ico_fuel.paa";
     };
 
-    class spikeStrip {
-        variable = "spikeStrip";
+    class PWA_nailribbon {
+        variable = "PWA_nailribbon";
         displayName = "STR_Item_SpikeStrip";
         weight = 15;
         buyPrice = 2500;
@@ -211,8 +211,8 @@ class VirtualItems {
         icon = "icons\ico_spikeStrip.paa";
     };
 
-    class lockpick {
-        variable = "lockpick";
+    class PWA_lockpick {
+        variable = "PWA_lockpick";
         displayName = "STR_Item_Lockpick";
         weight = 1;
         buyPrice = 150;
@@ -222,8 +222,8 @@ class VirtualItems {
         icon = "icons\ico_lockpick.paa";
     };
 
-    class goldbar {
-        variable = "goldBar";
+    class PWA_gold_processed {
+        variable = "PWA_gold_processed";
         displayName = "STR_Item_GoldBar";
         weight = 12;
         buyPrice = -1;
@@ -244,8 +244,8 @@ class VirtualItems {
         icon = "icons\ico_blastingCharge.paa";
     };
 
-    class boltcutter {
-        variable = "boltCutter";
+    class PWA_boltcutter {
+        variable = "PWA_boltcutter";
         displayName = "STR_Item_BCutter";
         weight = 5;
         buyPrice = 7500;
@@ -266,8 +266,8 @@ class VirtualItems {
         icon = "icons\ico_defuseKit.paa";
     };
 
-    class storagesmall {
-        variable = "storageSmall";
+    class PWA_storagecrate_small {
+        variable = "PWA_storagecrate_small";
         displayName = "STR_Item_StorageBS";
         weight = 5;
         buyPrice = 75000;
@@ -277,8 +277,8 @@ class VirtualItems {
         icon = "icons\ico_storageSmall.paa";
     };
 
-    class storagebig {
-        variable = "storageBig";
+    class PWA_storagecrate_big {
+        variable = "PWA_storagecrate_big";
         displayName = "STR_Item_StorageBL";
         weight = 10;
         buyPrice = 150000;
@@ -300,8 +300,8 @@ class VirtualItems {
         icon = "icons\ico_oilUnprocessed.paa";
     };
 
-    class oil_processed {
-        variable = "oilProcessed";
+    class PWA_oil_processed {
+        variable = "PWA_oil_processed";
         displayName = "STR_Item_OilP";
         weight = 6;
         buyPrice = -1;
@@ -311,8 +311,8 @@ class VirtualItems {
         icon = "icons\ico_oilProcessed.paa";
     };
 
-    class copper_unrefined {
-        variable = "copperUnrefined";
+    class PWA_copper_raw {
+        variable = "PWA_copper_raw";
         displayName = "STR_Item_CopperOre";
         weight = 4;
         buyPrice = -1;
@@ -322,8 +322,8 @@ class VirtualItems {
         icon = "icons\ico_copperOre.paa";
     };
 
-    class copper_refined {
-        variable = "copperRefined";
+    class PWA_copper_processed {
+        variable = "PWA_copper_processed";
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
@@ -333,8 +333,8 @@ class VirtualItems {
         icon = "icons\ico_copper.paa";
     };
 
-    class iron_unrefined {
-        variable = "ironUnrefined";
+    class PWA_iron_raw {
+        variable = "PWA_iron_raw";
         displayName = "STR_Item_IronOre";
         weight = 5;
         buyPrice = -1;
@@ -344,8 +344,8 @@ class VirtualItems {
         icon = "icons\ico_ironOre.paa";
     };
 
-    class iron_refined {
-        variable = "ironRefined";
+    class PWA_iron_processed {
+        variable = "PWA_iron_processed";
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
@@ -399,7 +399,7 @@ class VirtualItems {
         icon = "icons\ico_glass.paa";
     };
 
-    class diamond_uncut {
+    class PWA_diamond_raw {
         variable = "diamondUncut";
         displayName = "STR_Item_DiamondU";
         weight = 4;
@@ -410,7 +410,7 @@ class VirtualItems {
         icon = "icons\ico_diamondUncut.paa";
     };
 
-    class diamond_cut {
+    class PWA_diamond_processed {
         variable = "diamondCut";
         displayName = "STR_Item_DiamondC";
         weight = 2;
@@ -421,8 +421,8 @@ class VirtualItems {
         icon = "icons\ico_diamondCut.paa";
     };
 
-    class rock {
-        variable = "rock";
+    class PWA_stone_raw {
+        variable = "PWA_stone_raw";
         displayName = "STR_Item_Rock";
         weight = 6;
         buyPrice = -1;
@@ -432,8 +432,8 @@ class VirtualItems {
         icon = "icons\ico_rock.paa";
     };
 
-    class cement {
-        variable = "cement";
+    class PWA_stone_processed {
+        variable = "PWA_stone_processed";
         displayName = "STR_Item_CementBag";
         weight = 5;
         buyPrice = -1;
@@ -444,8 +444,8 @@ class VirtualItems {
     };
 
     //Drugs
-    class heroin_unprocessed {
-        variable = "heroinUnprocessed";
+    class PWA_heroin_raw {
+        variable = "PWA_heroin_raw";
         displayName = "STR_Item_HeroinU";
         weight = 6;
         buyPrice = -1;
@@ -453,11 +453,11 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinUnprocessed.paa";
-        processedItem = "heroin_processed";
+        processedItem = "PWA_heroin_processed";
     };
 
-    class heroin_processed {
-        variable = "heroinProcessed";
+    class PWA_heroin_processed {
+        variable = "PWA_heroin_processed";
         displayName = "STR_Item_HeroinP";
         weight = 4;
         buyPrice = 3500;
@@ -467,8 +467,8 @@ class VirtualItems {
         icon = "icons\ico_heroinProcessed.paa";
     };
 
-    class cannabis {
-        variable = "cannabis";
+    class PWA_cannabis_raw {
+        variable = "PWA_cannabis_raw";
         displayName = "STR_Item_Cannabis";
         weight = 4;
         buyPrice = -1;
@@ -476,11 +476,11 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_cannabis.paa";
-        processedItem = "marijuana";
+        processedItem = "PWA_cannabis_processed";
     };
 
-    class marijuana {
-        variable = "marijuana";
+    class PWA_cannabis_processed {
+        variable = "PWA_cannabis_processed";
         displayName = "STR_Item_Marijuana";
         weight = 3;
         buyPrice = 2800;
@@ -490,8 +490,8 @@ class VirtualItems {
         icon = "icons\ico_marijuana.paa";
     };
 
-    class cocaine_unprocessed {
-        variable = "cocaineUnprocessed";
+    class PWA_cocaine_raw {
+        variable = "PWA_cocaine_raw";
         displayName = "STR_Item_CocaineU";
         weight = 6;
         buyPrice = -1;
@@ -499,11 +499,11 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineUnprocessed.paa";
-        processedItem = "cocaine_processed";
+        processedItem = "PWA_cocaine_processed";
     };
 
-    class cocaine_processed {
-        variable = "cocaineProcessed";
+    class PWA_cocaine_processed {
+        variable = "PWA_cocaine_processed";
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
@@ -514,8 +514,8 @@ class VirtualItems {
     };
 
     //Drink
-    class redgull {
-        variable = "redgull";
+    class PWA_energydrink {
+        variable = "PWA_energydrink";
         displayName = "STR_Item_RedGull";
         weight = 1;
         buyPrice = 1500;
@@ -525,8 +525,8 @@ class VirtualItems {
         icon = "icons\ico_redgull.paa";
     };
 
-    class coffee {
-        variable = "coffee";
+    class PWA_coffee {
+        variable = "PWA_coffee";
         displayName = "STR_Item_Coffee";
         weight = 1;
         buyPrice = 10;
@@ -536,8 +536,8 @@ class VirtualItems {
         icon = "icons\ico_coffee.paa";
     };
 
-    class waterBottle {
-        variable = "waterBottle";
+    class PWA_waterbottle {
+        variable = "PWA_waterbottle";
         displayName = "STR_Item_WaterBottle";
         weight = 1;
         buyPrice = 10;
@@ -570,9 +570,9 @@ class VirtualItems {
         icon = "icons\ico_peach.paa";
     };
 
-    class tbacon {
-        variable = "tbacon";
-        displayName = "STR_Item_TBacon";
+    class PWA_beefjerky {
+        variable = "PWA_beefjerky";
+        displayName = "STR_Item_"PWA_beefjerky";
         weight = 1;
         buyPrice = 75;
         sellPrice = 25;
@@ -581,8 +581,8 @@ class VirtualItems {
         icon = "icons\ico_tBacon.paa";
     };
 
-    class donuts {
-        variable = "donuts";
+    class PWA_donut {
+        variable = "PWA_donut";
         displayName = "STR_Item_Donuts";
         weight = 1;
         buyPrice = 120;
@@ -614,8 +614,8 @@ class VirtualItems {
         icon = "icons\ico_rabbit.paa";
     };
 
-    class salema_raw {
-        variable = "salemaRaw";
+    class PWA_salema_raw{
+        variable = "PWA_salema_raw";
         displayName = "STR_Item_SalemaRaw";
         weight = 2;
         buyPrice = -1;
@@ -636,8 +636,8 @@ class VirtualItems {
         icon = "icons\ico_cookedFish.paa";
     };
 
-    class ornate_raw {
-        variable = "ornateRaw";
+    class PWA_ornate_raw {
+        variable = "PWA_ornate_raw";
         displayName = "STR_Item_OrnateRaw";
         weight = 2;
         buyPrice = -1;
@@ -658,8 +658,8 @@ class VirtualItems {
         icon = "icons\ico_cookedFish.paa";
     };
 
-    class mackerel_raw {
-        variable = "mackerelRaw";
+    class PWA_mackerel_raw {
+        variable = "PWA_mackerel_raw";
         displayName = "STR_Item_MackerelRaw";
         weight = 4;
         buyPrice = -1;
@@ -680,8 +680,8 @@ class VirtualItems {
         icon = "icons\ico_cookedFish.paa";
     };
 
-    class tuna_raw {
-        variable = "tunaRaw";
+    class PWA_tuna_raw {
+        variable = "PWA_tuna_raw";
         displayName = "STR_Item_TunaRaw";
         weight = 6;
         buyPrice = -1;
@@ -702,8 +702,8 @@ class VirtualItems {
         icon = "icons\ico_cookedFish.paa";
     };
 
-    class mullet_raw {
-        variable = "mulletRaw";
+    class PWA_mullet_raw {
+        variable = "PWA_mullet_raw";
         displayName = "STR_Item_MulletRaw";
         weight = 4;
         buyPrice = -1;
@@ -724,8 +724,8 @@ class VirtualItems {
         icon = "icons\ico_cookedFish.paa";
     };
 
-    class catshark_raw {
-        variable = "catsharkRaw";
+    class PWA_catshark_raw {
+        variable = "PWA_catshark_raw";
         displayName = "STR_Item_CatSharkRaw";
         weight = 6;
         buyPrice = -1;
