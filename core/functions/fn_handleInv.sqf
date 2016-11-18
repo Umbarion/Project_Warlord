@@ -23,11 +23,13 @@ if (_math) then {
 		_return=true;
     } else {_return = false;};
 } else {
-    //Lets SUB!
-    for "_i" from 1 to _num do {
-		 player removeMagazine _item;
-	};
-	_return=true
+    _value=({_x == _item} count magazines player)
+    if(_num<=value)then{
+	    for "_i" from 1 to _num do {
+		player removeMagazine _item;
+	    };
+	    _return=true
+    }else{_return=false;};
 };
 
 _return;
