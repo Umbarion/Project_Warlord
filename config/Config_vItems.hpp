@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_storagecrate_small", "PWA_storagecrate_big" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_storagecrate_small", "PWA_storagecrate_big" };
     };
 
     class med_market {
@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "lockpick", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "lockpick", "PWA_pickaxe", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
     };
 
     class wongs {
@@ -145,16 +145,6 @@ class VirtualItems {
     //Virtual Items
 
     //Misc
-    class PWA_pickaxe {
-        variable = "PWA_pickaxe";
-        displayName = "STR_Item_Pickaxe";
-        weight = 2;
-        buyPrice = 750;
-        sellPrice = 350;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_pickaxe.paa";
-    };
 
     class PWA_defibrillator {
         variable = "PWA_defibrillator";
