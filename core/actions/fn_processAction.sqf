@@ -47,12 +47,12 @@ if (_hasLicense) then {
         sleep  0.03;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
-        _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
+        _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",(localize format ["%1",_text])];
         if (_cP >= 1) exitWith {};
         if (player distance _vendor > 10) exitWith {};
 		};
 		{
-			_itemx=x;
+			_itemx=_x;
 			if(_x select 1>({(_itemx select 0)==_x } count magazines player))exitWith{_success=false;hint "Du hast nicht mehr genug.";};
 		}
 		foreach _materialsRequired;
