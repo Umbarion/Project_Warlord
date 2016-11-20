@@ -8,7 +8,7 @@
     Master handling for processing an item.
     NiiRoZz : Added multiprocess
 */
-private ["_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions"];
+private ["_vendor","_type","_itemInfo","_oldItem","_newItemWeight","_newItem","_itemx","_oldItemWeight","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_materialsRequired","_materialsGiven","_noLicenseCost","_text","_filter","_totalConversions","_minimumConversions"];
 _vendor = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -38,7 +38,8 @@ if (count _oldItem isEqualTo 0) exitWith {life_action_inUse = false;};
 
 _totalConversions = [];
 {
-    _var = ITEM_VALUE(_x select 0);
+	_itemx=_x;
+    _var = ({_x == _itemx} count magazines player);
     if (_var isEqualTo 0) exitWith {_exit = true;};
     if (_var < (_x select 1)) exitWith {_exit = true;};
     _totalConversions pushBack (floor (_var/(_x select 1)));
@@ -68,7 +69,7 @@ _newItemWeight = 0;
 } count _newItem;
 
 _exit = false;
-
+/*
 if (_newItemWeight > _oldItemWeight) then {
     _netChange = _newItemWeight - _oldItemWeight;
     _freeSpace = life_maxWeight - life_carryWeight;
@@ -80,7 +81,7 @@ if (_newItemWeight > _oldItemWeight) then {
 };
 
 if (_exit) exitWith {hint localize "STR_Process_Weight"; life_is_processing = false; life_action_inUse = false;};
-
+*/
 //Setup our progress bar.
 disableSerialization;
 "progressBar" cutRsc ["life_progress","PLAIN"];
