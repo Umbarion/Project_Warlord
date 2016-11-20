@@ -40,7 +40,7 @@ life_is_processing = true;
 
 if (_hasLicense) then {
 	_success=true;
-	while{_success}
+	while{_success}do
 	{
 		_cp=0.01;
 		for "_i" from 0 to 1 step 0 do {
@@ -66,7 +66,7 @@ if (_hasLicense) then {
 			}
 			foreach _materialsGiven;
 		};
-    }
+    };
     "progressBar" cutText ["","PLAIN"];
 }else{hint "Du hast keine Lizens.";}; 
 life_is_processing = false; 
