@@ -133,31 +133,7 @@ switch (_code) do {
 
     //T Key (Trunk)
     case 20: {
-        if (!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
-            if (vehicle player != player && alive vehicle player) then {
-                if ((vehicle player) in life_vehicles) then {
-                    [vehicle player] spawn life_fnc_openInventory;
-                };
-            } else {
-                private "_list";
-                _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
-                if (!(isNil "_list")) then {
-                    _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
-                    if (_house getVariable ["locked", false]) then {
-                        hint localize "STR_House_ContainerDeny";
-                    } else {
-                        [_list] spawn life_fnc_openInventory;
-                    };
-                } else {
-                    _list = ["landVehicle","Air","Ship"];
-                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 7} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
-                        if (cursorObject in life_vehicles || {locked cursorObject isEqualTo 0}) then {
-                            [cursorObject] spawn life_fnc_openInventory;
-                        };
-                    };
-                };
-            };
-        };
+      
     };
 
     //L Key?
@@ -255,102 +231,17 @@ switch (_code) do {
                 if (_veh in life_vehicles && {player distance _veh < 20}) then {
                     if (_locked isEqualTo 2) then {
                         if (local _veh) then {
-                            _veh lock 0;
-
-                            // BI
-                            _veh animateDoor ["door_back_R",1];
-                            _veh animateDoor ["door_back_L",1];
-                            _veh animateDoor ['door_R',1];
-                            _veh animateDoor ['door_L',1];
-                            _veh animateDoor ['Door_L_source',1];
-                            _veh animateDoor ['Door_rear',1];
-                            _veh animateDoor ['Door_rear_source',1];
-                            _veh animateDoor ['Door_1_source',1];
-                            _veh animateDoor ['Door_2_source',1];
-                            _veh animateDoor ['Door_3_source',1];
-                            _veh animateDoor ['Door_LM',1];
-                            _veh animateDoor ['Door_RM',1];
-                            _veh animateDoor ['Door_LF',1];
-                            _veh animateDoor ['Door_RF',1];
-                            _veh animateDoor ['Door_LB',1];
-                            _veh animateDoor ['Door_RB',1];
-                            _veh animateDoor ['DoorL_Front_Open',1];
-                            _veh animateDoor ['DoorR_Front_Open',1];
-                            _veh animateDoor ['DoorL_Back_Open',1];
-                            _veh animateDoor ['DoorR_Back_Open ',1];
+                            _veh lock 0;  
                         } else {
                             [_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
-
-                            _veh animateDoor ["door_back_R",1];
-                            _veh animateDoor ["door_back_L",1];
-                            _veh animateDoor ['door_R',1];
-                            _veh animateDoor ['door_L',1];
-                            _veh animateDoor ['Door_L_source',1];
-                            _veh animateDoor ['Door_rear',1];
-                            _veh animateDoor ['Door_rear_source',1];
-                            _veh animateDoor ['Door_1_source',1];
-                            _veh animateDoor ['Door_2_source',1];
-                            _veh animateDoor ['Door_3_source',1];
-                            _veh animateDoor ['Door_LM',1];
-                            _veh animateDoor ['Door_RM',1];
-                            _veh animateDoor ['Door_LF',1];
-                            _veh animateDoor ['Door_RF',1];
-                            _veh animateDoor ['Door_LB',1];
-                            _veh animateDoor ['Door_RB',1];
-                            _veh animateDoor ['DoorL_Front_Open',1];
-                            _veh animateDoor ['DoorR_Front_Open',1];
-                            _veh animateDoor ['DoorL_Back_Open',1];
-                            _veh animateDoor ['DoorR_Back_Open ',1];
                         };
                         systemChat localize "STR_MISC_VehUnlock";
                         [_veh,"unlockCarSound"] remoteExec ["life_fnc_say3D",RANY];
                     } else {
                         if (local _veh) then {
                             _veh lock 2;
-
-                            _veh animateDoor ["door_back_R",0];
-                            _veh animateDoor ["door_back_L",0];
-                            _veh animateDoor ['door_R',0];
-                            _veh animateDoor ['door_L',0];
-                            _veh animateDoor ['Door_L_source',0];
-                            _veh animateDoor ['Door_rear',0];
-                            _veh animateDoor ['Door_rear_source',0];
-                            _veh animateDoor ['Door_1_source',0];
-                            _veh animateDoor ['Door_2_source',0];
-                            _veh animateDoor ['Door_3_source',0];
-                            _veh animateDoor ['Door_LM',0];
-                            _veh animateDoor ['Door_RM',0];
-                            _veh animateDoor ['Door_LF',0];
-                            _veh animateDoor ['Door_RF',0];
-                            _veh animateDoor ['Door_LB',0];
-                            _veh animateDoor ['Door_RB',0];
-                            _veh animateDoor ['DoorL_Front_Open',0];
-                            _veh animateDoor ['DoorR_Front_Open',0];
-                            _veh animateDoor ['DoorL_Back_Open',0];
-                            _veh animateDoor ['DoorR_Back_Open ',0];
                         } else {
                             [_veh,2] remoteExecCall ["life_fnc_lockVehicle",_veh];
-
-                            _veh animateDoor ["door_back_R",0];
-                            _veh animateDoor ["door_back_L",0];
-                            _veh animateDoor ['door_R',0];
-                            _veh animateDoor ['door_L',0];
-                            _veh animateDoor ['Door_L_source',0];
-                            _veh animateDoor ['Door_rear',0];
-                            _veh animateDoor ['Door_rear_source',0];
-                            _veh animateDoor ['Door_1_source',0];
-                            _veh animateDoor ['Door_2_source',0];
-                            _veh animateDoor ['Door_3_source',0];
-                            _veh animateDoor ['Door_LM',0];
-                            _veh animateDoor ['Door_RM',0];
-                            _veh animateDoor ['Door_LF',0];
-                            _veh animateDoor ['Door_RF',0];
-                            _veh animateDoor ['Door_LB',0];
-                            _veh animateDoor ['Door_RB',0];
-                            _veh animateDoor ['DoorL_Front_Open',0];
-                            _veh animateDoor ['DoorR_Front_Open',0];
-                            _veh animateDoor ['DoorL_Back_Open',0];
-                            _veh animateDoor ['DoorR_Back_Open ',0];
                         };
                         systemChat localize "STR_MISC_VehLock";
                         [_veh,"lockCarSound"] remoteExec ["life_fnc_say3D",RANY];
