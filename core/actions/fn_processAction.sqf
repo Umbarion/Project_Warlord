@@ -50,12 +50,12 @@ if (_hasLicense) then {
 		foreach _materialsRequired;
 		_cp=0.01;
 		for "_i" from 0 to 1 step 0 do {
-        sleep  0.02;
-        _cP = _cP + 0.01;
-        _progress progressSetPosition _cP;
-        _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",(localize format ["%1",_text])];
-        if (_cP >= 1) exitWith {};
-        if (player distance _vendor > 10) exitWith {};
+			sleep  0.02;
+			_cP = _cP + 0.01;
+			_progress progressSetPosition _cP;
+			_pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",(localize format ["%1",_text])];
+			if (_cP >= 1) exitWith {};
+			if (player distance _vendor > 10) exitWith {};
 		};
 		{
 			_itemx=_x;
