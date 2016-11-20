@@ -106,21 +106,21 @@ class ProcessAction {
     };
 	class ruby {
         MaterialsReq[] = {{"PWA_ruby_raw",1}};
-        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        MaterialsGive[] = {{"PWA_ruby_processed",1}};
         Text = "STR_Process_Ruby";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
     };
 	class cigarettes {
         MaterialsReq[] = {{"PWA_cigarettes_raw",1}};
-        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        MaterialsGive[] = {{"PWA_cigarettes_processed",1}};
         Text = "STR_Process_Cigarettes";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
     };
 	class coke {
         MaterialsReq[] = {{"PWA_coke_raw",1}};
-        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        MaterialsGive[] = {{"PWA_coke_processed",1}};
         Text = "STR_Process_Coke";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
