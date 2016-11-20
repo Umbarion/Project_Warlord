@@ -46,6 +46,7 @@ if (_hasLicense) then {
 			_itemx=_x;
 			if(_x select 1>({(_itemx select 0)==_x } count magazines player))exitWith{_success=false;hint "Du hast nicht mehr genug.";};
 		}
+		if!(_success)exitWith{};
 		foreach _materialsRequired;
 		_cp=0.01;
 		for "_i" from 0 to 1 step 0 do {
