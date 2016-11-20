@@ -101,35 +101,35 @@ class ProcessAction {
         MaterialsReq[] = {{"PWA_platinum_raw",1}};
         MaterialsGive[] = {{"PWA_platinum_processed",1}};
         Text = "STR_Process_Platinum";
-        //ScrollText = "Process Cocaine";
+        //ScrollText = "Process Platinum";
         NoLicenseCost = 1500;
     };
 	class ruby {
         MaterialsReq[] = {{"PWA_ruby_raw",1}};
         MaterialsGive[] = {{"PWA_ruby_processed",1}};
         Text = "STR_Process_Ruby";
-        //ScrollText = "Process Cocaine";
-        NoLicenseCost = 1500;
+        //ScrollText = "Process Ruby";
+        NoLicenseCost = 1200;
     };
 	class cigarettes {
         MaterialsReq[] = {{"PWA_cigarettes_raw",1}};
         MaterialsGive[] = {{"PWA_cigarettes_processed",1}};
         Text = "STR_Process_Cigarettes";
-        //ScrollText = "Process Cocaine";
-        NoLicenseCost = 1500;
+        //ScrollText = "Process Cigarettes";
+        NoLicenseCost = 700;
     };
 	class coke {
         MaterialsReq[] = {{"PWA_coke_raw",1}};
         MaterialsGive[] = {{"PWA_coke_processed",1}};
         Text = "STR_Process_Coke";
-        //ScrollText = "Process Cocaine";
+        //ScrollText = "Process Coke";
         NoLicenseCost = 1500;
     };
 	class millet {
         MaterialsReq[] = {{"PWA_millet_raw",1}};
         MaterialsGive[] = {{"PWA_millet_processed",1}};
         Text = "STR_Process_Millet";
-        //ScrollText = "Process Cocaine";
+        //ScrollText = "Process Millet";
         NoLicenseCost = 500;
     };
 };
