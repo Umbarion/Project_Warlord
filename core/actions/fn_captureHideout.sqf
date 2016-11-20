@@ -8,7 +8,7 @@
 */
 
 
-private _hideout = _this;
+private _hideout = _this select 0;
 private _group = _hideout getVariable ["gangOwner",grpNull];
 
 if (isNil {group player getVariable "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};

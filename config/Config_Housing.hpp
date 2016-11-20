@@ -18,6 +18,16 @@
 
 class Housing {
 	class IslaDuala3 {
+		class Land_House_y {
+            price = 1050000;
+            numberCrates = 2;
+            restrictedPos[] = {};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {-1.5,0,2};
+        };
 
         class Land_i_House_Big_02_V1_F {
             price = 1550000;
