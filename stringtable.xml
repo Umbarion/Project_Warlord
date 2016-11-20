@@ -7068,6 +7068,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Adminshop">
+            <Original>Underground Imports</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Underground Imports</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_Medmarijuana">
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>

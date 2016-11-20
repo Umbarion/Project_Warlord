@@ -7,7 +7,17 @@
 *        side = side indicator
 */
 class Licenses {
-    //Civilian Licenses
+    
+	//Admin-License - NOT buyable
+	class adminshop {
+        variable = "adminshop";
+        displayName = "STR_License_Adminshop";
+        price = 500000000;
+        illegal = false;
+        side = "civ";
+    };
+	
+	//Civilian Licenses
     class driver {
         variable = "driver";
         displayName = "STR_License_Driver";
