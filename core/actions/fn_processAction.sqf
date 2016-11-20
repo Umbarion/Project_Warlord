@@ -56,32 +56,7 @@ if (_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 _cost = _cost * (count _oldItem);
 
 _minimumConversions = _totalConversions call BIS_fnc_lowestNum;
-/*_oldItemWeight = 0;
-{
-    _weight = ([_x select 0] call life_fnc_itemWeight) * (_x select 1);
-    _oldItemWeight = _oldItemWeight + _weight;
-} count _oldItem;
 
-_newItemWeight = 0;
-{
-    _weight = ([_x select 0] call life_fnc_itemWeight) * (_x select 1);
-    _newItemWeight = _newItemWeight + _weight;
-} count _newItem;
-*/
-_exit = false;
-/*
-if (_newItemWeight > _oldItemWeight) then {
-    _netChange = _newItemWeight - _oldItemWeight;
-    _freeSpace = life_maxWeight - life_carryWeight;
-    if (_freeSpace < _netChange) exitWith {_exit = true;};
-    private _estConversions = floor(_freeSpace / _netChange);
-    if (_estConversions < _minimumConversions) then {
-        _minimumConversions = _estConversions;
-    };
-};
-
-if (_exit) exitWith {hint localize "STR_Process_Weight"; life_is_processing = false; life_action_inUse = false;};
-*/
 //Setup our progress bar.
 disableSerialization;
 "progressBar" cutRsc ["life_progress","PLAIN"];
@@ -106,43 +81,14 @@ if (_hasLicense) then {
     if (player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
 
     {
-        [false,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
+        if ([false,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv)then{_success=true;};
     } count _oldItem;
-
-    {
-        [true,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
-    } count _newItem;
-
+	if(_success)then{
+		{
+			[true,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
+		} count _newItem;
+	}else{hint "Ich lass mich nicht verarschen! Dein Zeug behalte ich."};
     "progressBar" cutText ["","PLAIN"];
     if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
     life_is_processing = false; life_action_inUse = false;
-} else {
-    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
-
-    for "_i" from 0 to 1 step 0 do {
-        sleep  0.9;
-        _cP = _cP + 0.01;
-        _progress progressSetPosition _cP;
-        _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-        if (_cP >= 1) exitWith {};
-        if (player distance _vendor > 10) exitWith {};
-    };
-
-    if (player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
-    if (CASH < _cost) exitWith {hint format [localize "STR_Process_License",[_cost] call life_fnc_numberText]; "progressBar" cutText ["","PLAIN"]; life_is_processing = false; life_action_inUse = false;};
-
-    {
-        [false,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
-    } count _oldItem;
-
-    {
-        [true,(_x select 0),((_x select 1)*(_minimumConversions))] call life_fnc_handleInv;
-    } count _newItem;
-
-    "progressBar" cutText ["","PLAIN"];
-    if (_minimumConversions isEqualTo (_totalConversions call BIS_fnc_lowestNum)) then {hint localize "STR_NOTF_ItemProcess";} else {hint localize "STR_Process_Partial";};
-    CASH = CASH - _cost;
-    [0] call SOCK_fnc_updatePartial;
-    life_is_processing = false;
-    life_action_inUse = false;
-};
+}; 
