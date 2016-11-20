@@ -39,7 +39,7 @@ if (count _oldItem isEqualTo 0) exitWith {life_action_inUse = false;};
 _totalConversions = [];
 {
 	_itemx=_x;
-    _var = ({_x == _itemx} count magazines player);
+    _var = ({_x == _itemx select 0} count magazines player);
     if (_var isEqualTo 0) exitWith {_exit = true;};
     if (_var < (_x select 1)) exitWith {_exit = true;};
     _totalConversions pushBack (floor (_var/(_x select 1)));
