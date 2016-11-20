@@ -42,9 +42,14 @@ if (_hasLicense) then {
 	_success=true;
 	while{_success}do
 	{
+		{
+			_itemx=_x;
+			if(_x select 1>({(_itemx select 0)==_x } count magazines player))exitWith{_success=false;hint "Du hast nicht mehr genug.";};
+		}
+		foreach _materialsRequired;
 		_cp=0.01;
 		for "_i" from 0 to 1 step 0 do {
-        sleep  0.03;
+        sleep  0.02;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%",(localize format ["%1",_text])];
