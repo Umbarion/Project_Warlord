@@ -7820,6 +7820,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_Process_Millet">
+            <Original>Processing Millet</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hirse wird verarbeitet</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
     </Package>
     <Package name="Medical_Strings">
         <Key ID="STR_Medic_Online">
@@ -10599,6 +10610,50 @@
             <Spanish></Spanish>
             <Russian></Russian>
             <German>Kokerei</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Millet_Field">
+            <Original>Millet Field</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hirsefeld</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+        <Key ID="STR_MAR_Millet_Processing">
+            <Original>Millet Processing</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hirseverarbeitung</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Date_Field">
+            <Original>Date Plantation</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Dattelplantage</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Nut_Field">
+            <Original>Nut Plantation</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Nussplantage</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>

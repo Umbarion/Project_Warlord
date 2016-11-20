@@ -125,4 +125,11 @@ class ProcessAction {
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
     };
+	class millet {
+        MaterialsReq[] = {{"PWA_millet_raw",1}};
+        MaterialsGive[] = {{"PWA_millet_processed",1}};
+        Text = "STR_Process_Millet";
+        //ScrollText = "Process Cocaine";
+        NoLicenseCost = 500;
+    };
 };

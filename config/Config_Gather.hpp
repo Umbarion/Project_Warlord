@@ -149,5 +149,26 @@ Example 2:
             mined[] = { "PWA_coke_raw" };
             zoneSize = 30;
 		};
+		class millet_unprocessed {
+            amount = 2;
+            zones[] = { "millet_field_1" , "millet_field_2" };
+            item = "PWA_pickaxe";
+            mined[] = { "PWA_millet_raw" };
+            zoneSize = 30;
+		};
+		class date {
+            amount = 2;
+            zones[] = { "date_field_1" , "date_field_2" , "date_field_3" };
+            item = "";
+            mined[] = { "PWA_date_raw" };
+            zoneSize = 30;
+		};
+		class nuts {
+            amount = 2;
+            zones[] = { "nut_field_1" , "nut_field_2" , "nut_field_3" };
+            item = "";
+            mined[] = { "PWA_nuts_raw" };
+            zoneSize = 30;
+		};
     };
 };
