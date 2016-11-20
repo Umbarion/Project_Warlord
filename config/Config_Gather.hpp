@@ -97,22 +97,6 @@ Example 2:
             zoneSize = 30;
         };
 
-        class salt_unrefined {
-            amount = 2;
-            zones[] = { "salt_mine" };
-            item = "PWA_pickaxe";
-            mined[] = { "salt_unrefined" };
-            zoneSize = 30;
-        };
-
-        class sand {
-            amount = 2;
-            zones[] = { "sand_mine" };
-            item = "PWA_pickaxe";
-            mined[] = { "sand" };
-            zoneSize = 30;
-        };
-
         class diamond_uncut {
             amount = 2;
             zones[] = { "diamond_mine" };
@@ -131,10 +115,39 @@ Example 2:
 
         class oil_unprocessed {
             amount = 2;
-            zones[] = { "oil_field_1", "oil_field_2" };
-            item = "PWA_pickaxe";
+            zones[] = { "oil_field_1" };
+            item = "PWA_drillingequipment";
             mined[] = { "PWA_oil_raw" };
             zoneSize = 30;
         };
+		//custom materials Project Warlord
+		class platinum_unrefined {
+            amount = 2;
+            zones[] = { "platinum_mine" };
+            item = "PWA_pickaxe";
+            mined[] = { "PWA_platinum_raw" };
+            zoneSize = 30;
+        };
+		class ruby_uncut {
+            amount = 2;
+            zones[] = { "ruby_mine" };
+            item = "PWA_pickaxe";
+            mined[] = { "PWA_ruby_raw" };
+            zoneSize = 30;
+        };
+		class cigarettes_unprocessed {
+            amount = 2;
+            zones[] = { "cigarettes_field" };
+            item = "PWA_secateurs";
+            mined[] = { "PWA_cigarettes_raw" };
+            zoneSize = 30;
+		};
+		class coke_unprocessed {
+            amount = 2;
+            zones[] = { "coke_mine" };
+            item = "PWA_pickaxe";
+            mined[] = { "PWA_coke_raw" };
+            zoneSize = 30;
+		};
     };
 };

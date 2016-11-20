@@ -76,7 +76,7 @@ class Licenses {
     class diamond {
         variable = "diamond";
         displayName = "STR_License_Diamond";
-        price = 35000;
+        price = 50000;
         illegal = false;
         side = "civ";
     };
@@ -125,6 +125,35 @@ class Licenses {
         variable = "medmarijuana";
         displayName = "STR_License_Medmarijuana";
         price = 15000;
+        illegal = false;
+        side = "civ";
+    };
+	//Custom Licenses Project Warlord
+	class platinum {
+        variable = "platinum";
+        displayName = "STR_License_Platinum";
+        price = 50000;
+        illegal = false;
+        side = "civ";
+    };
+	class ruby {
+        variable = "ruby";
+        displayName = "STR_License_Ruby";
+        price = 35000;
+        illegal = false;
+        side = "civ";
+    };
+	class cigarettes {
+        variable = "cigarettes";
+        displayName = "STR_License_Cigarettes";
+        price = 6500;
+        illegal = false;
+        side = "civ";
+    };
+	class coke {
+        variable = "coke";
+        displayName = "STR_License_Coke";
+        price = 35000;
         illegal = false;
         side = "civ";
     };

@@ -96,4 +96,33 @@ class ProcessAction {
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
     };
+	//custom materials Project Warlord
+	class platinum {
+        MaterialsReq[] = {{"PWA_platinum_raw",1}};
+        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        Text = "STR_Process_Platinum";
+        //ScrollText = "Process Cocaine";
+        NoLicenseCost = 1500;
+    };
+	class ruby {
+        MaterialsReq[] = {{"PWA_ruby_raw",1}};
+        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        Text = "STR_Process_Ruby";
+        //ScrollText = "Process Cocaine";
+        NoLicenseCost = 1500;
+    };
+	class cigarettes {
+        MaterialsReq[] = {{"PWA_cigarettes_raw",1}};
+        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        Text = "STR_Process_Cigarettes";
+        //ScrollText = "Process Cocaine";
+        NoLicenseCost = 1500;
+    };
+	class coke {
+        MaterialsReq[] = {{"PWA_coke_raw",1}};
+        MaterialsGive[] = {{"PWA_platinum_processed",1}};
+        Text = "STR_Process_Coke";
+        //ScrollText = "Process Cocaine";
+        NoLicenseCost = 1500;
+    };
 };

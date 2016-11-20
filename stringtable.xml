@@ -49,36 +49,36 @@
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">
             <Original>Bruce's Outback Outfits</Original>
-            <Czech>Bruceovy Outback Oblečení</Czech>
-            <French>Friperie de Bruce</French>
-            <Spanish>Tienda de Ropa</Spanish>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <Portuguese>Loja de Roupas</Portuguese>
-            <Polish>Sklep odzieżowy</Polish>
-            <Italian>Emporio di Bruce</Italian>
-            <German>Bruce Outback Outfits</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+            <German>Bruce Kleidungsladen</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
-            <Czech>Altis policejní oddělení Shop</Czech>
-            <French>Boutique de la police</French>
-            <Spanish>Tienda del Departamento de Policía</Spanish>
+            <Original>Militia Shop</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <Portuguese>Loja de Roupas Policiais</Portuguese>
-            <Polish>Sklep Policyjny</Polish>
-            <Italian>Dipartimento della Polizia di Altis</Italian>
-            <German>Altis Police Department-Shop</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+            <German>Miliz-Shop</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
-            <Original>Mohammed's Jihadi Shop</Original>
-            <Czech>Mohamedův džihád Shop</Czech>
-            <French>Magasin Rebel de Mohammed</French>
-            <Spanish>Tienda Jihadi de Mohamed</Spanish>
-            <Italian>Negozio della Jihad di Mohammed</Italian>
+            <Original>Rebel Clothing</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <Portuguese>Loja de Roupas Rebeldes</Portuguese>
-            <Polish>Sklep samobójców AKBAR</Polish>
-            <German>Mohammeds Jihad-Shop</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <German>Rebellenkleidung</German>
         </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Steve's Diving Shop</Original>
@@ -125,15 +125,15 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Altis Market</Original>
-            <Czech>Altis Market</Czech>
-            <Spanish>Mercado de Altis</Spanish>
+            <Original>African Market</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Altis Markt</German>
-            <Italian>Mercato</Italian>
-            <French>Marché</French>
-            <Portuguese>Mercado</Portuguese>
-            <Polish>Market Altis</Polish>
+            <German>Afrikanischer Markt</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>Rebel Market</Original>
@@ -235,26 +235,26 @@
             <Polish>Skup Szkła</Polish>
         </Key>
         <Key ID="STR_Shops_Minerals">
-            <Original>Altis Industrial Trader</Original>
-            <Czech>Altis Industrial Trader</Czech>
+            <Original>Industrial Trader</Original>
+            <Czech>Industrial Trader</Czech>
             <Spanish>Comerciante Industrial</Spanish>
             <Russian></Russian>
-            <German>Altis Industriehandel</German>
+            <German>Industriehandel</German>
             <Italian>Vendita materiali industriali</Italian>
             <French>Acheteur Industriel</French>
             <Portuguese>Comprador de Material Indústrial</Portuguese>
             <Polish>Skup materiałów przemysłowych</Polish>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>APD Item Shop</Original>
-            <Czech>APD Item Shop</Czech>
-            <Spanish>Equipamiento Policial</Spanish>
+            <Original>Militia Item Shop</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>APD Gegenstände</German>
-            <Italian>Negozio Polizia</Italian>
-            <French>Equipement de Police</French>
-            <Portuguese>Equipamentos da Polícia</Portuguese>
-            <Polish>Zbrojownia Policji</Polish>
+            <German>Miliz Gegenstände</German>
+            <Italian></Italian>
+            <French></French>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Shops_Cement">
             <Original>Juan's Cement Laying</Original>
@@ -7024,6 +7024,50 @@
             <Portuguese>Licença de Cimento</Portuguese>
             <Polish>Wytwórca cementu</Polish>
         </Key>
+		<Key ID="STR_License_Platinum">
+            <Original>Platinum Processing License</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platinverarbeitung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Ruby">
+            <Original>Ruby Processing License</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Rubinverarbeitung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Cigarettes">
+            <Original>Cigarette Production License</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Zigarettenherstellung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_License_Coke">
+            <Original>Coke Production License</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kokerei-Lizenz</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
         <Key ID="STR_License_Medmarijuana">
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>
@@ -7720,6 +7764,50 @@
             <Italian>Hai processato %1 in %2 al costo di $%3</Italian>
             <Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
             <Polish>Przetworzyłeś %1 na % za $%3</Polish>
+        </Key>
+		<Key ID="STR_Process_Platinum">
+            <Original>Processing Platinum</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platin wird verarbeitet</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Ruby">
+            <Original>Processing Ruby</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Rubin wird verarbeitet</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Cigarettes">
+            <Original>Processing Tobacco</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Tabak wird verarbeitet</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Coke">
+            <Original>Processing Coal</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kohle wird verarbeitet</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
     </Package>
     <Package name="Medical_Strings">
@@ -9317,26 +9405,26 @@
             <Italian>Ospedale</Italian>
         </Key>
         <Key ID="STR_MAR_Police_Station">
-            <Original>Police Station</Original>
-            <Czech>Policejní stanice</Czech>
-            <French>Poste de police</French>
-            <Spanish>Estación de Policia</Spanish>
+            <Original>Militia Station</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Polizei Revier</German>
-            <Portuguese>Estação Policial</Portuguese>
-            <Polish>Posterunek policji</Polish>
-            <Italian>Questura</Italian>
+            <German>Miliz Außenposten</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
         </Key>
         <Key ID="STR_MAR_Police_Air_HQ">
-            <Original>Police Air HQ</Original>
-            <Czech>Police Air HQ</Czech>
-            <French>HQ Air Police</French>
-            <Spanish>Cuartel Aéreo Policial</Spanish>
-            <Italian>QG Aereo Polizia</Italian>
+            <Original>Militia Air HQ</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <German>Polizei HQ Flughafen</German>
-            <Portuguese>QG Aéreo Policial</Portuguese>
-            <Polish>Baza lotnicza policji</Polish>
+            <German>Miliz Flughafen</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_MAR_Iron_Mine">
             <Original>Iron Mine</Original>
@@ -9394,15 +9482,15 @@
             <Italian>Penitenziario di Tanoa</Italian>
         </Key>
         <Key ID="STR_MAR_Police_HQ">
-            <Original>Police HQ</Original>
-            <Czech>Police HQ</Czech>
-            <French>QG de la police</French>
-            <Spanish>Comisaria de Policía</Spanish>
-            <Italian>QG Polizia</Italian>
+            <Original>Militia HQ</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <German>Polizei HauptQuartier</German>
-            <Portuguese>QG Policial</Portuguese>
-            <Polish>KG Policji Altis</Polish>
+            <German>Miliz HQ</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_MAR_Coast_Guard">
             <Original>Coast Guard</Original>
@@ -10416,6 +10504,94 @@
             <Polish>Zapłać kaucję</Polish>
             <Italian>Paga cauzione</Italian>
         </Key>
+		<Key ID="STR_MAR_Platinum_Mine">
+            <Original>Platinum Mine</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platin Mine</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+        <Key ID="STR_MAR_Platinum_Processing">
+            <Original>Platinum Processing</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Platin Verarbeitung</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Ruby_Mine">
+            <Original>Ruby Mine</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Rubin Mine</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+        <Key ID="STR_MAR_Ruby_Processing">
+            <Original>Ruby Processing</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Rubin Verarbeitung</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Cigarettes_Field">
+            <Original>Tobacco Farm</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Tabakfeld</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+        <Key ID="STR_MAR_Cigarette_Processing">
+            <Original>Cigarette Factory</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Zigarettenfabrik</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Coke_Mine">
+            <Original>Coal Mine</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kohle Mine</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+        <Key ID="STR_MAR_Coke_Processing">
+            <Original>Coke Processing</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Kokerei</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
     </Package>
     <Package name="Crimes">
         <Key ID="STR_Crime_187V">
@@ -10427,7 +10603,7 @@
             <Polish>Kołowego Manslaughter</Polish>
             <Russian></Russian>
             <Portuguese>Atropelamento</Portuguese>
-            <German>Fahrlässige Tötung</German>
+            <German>VDM Tötung</German>
         </Key>
         <Key ID="STR_Crime_187">
             <Original>Manslaughter</Original>
