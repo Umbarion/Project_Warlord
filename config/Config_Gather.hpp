@@ -152,7 +152,7 @@ Example 2:
 		class millet_unprocessed {
             amount = 2;
             zones[] = { "millet_field_1" , "millet_field_2" };
-            item = "PWA_pickaxe";
+            item = "PWA_secateurs";
             mined[] = { "PWA_millet_raw" };
             zoneSize = 30;
 		};
