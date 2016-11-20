@@ -56,7 +56,7 @@ if (_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 _cost = _cost * (count _oldItem);
 
 _minimumConversions = _totalConversions call BIS_fnc_lowestNum;
-_oldItemWeight = 0;
+/*_oldItemWeight = 0;
 {
     _weight = ([_x select 0] call life_fnc_itemWeight) * (_x select 1);
     _oldItemWeight = _oldItemWeight + _weight;
@@ -67,7 +67,7 @@ _newItemWeight = 0;
     _weight = ([_x select 0] call life_fnc_itemWeight) * (_x select 1);
     _newItemWeight = _newItemWeight + _weight;
 } count _newItem;
-
+*/
 _exit = false;
 /*
 if (_newItemWeight > _oldItemWeight) then {
