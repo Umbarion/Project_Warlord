@@ -10669,6 +10669,28 @@
             <Polish></Polish>
             <Italian></Italian>
         </Key>
+		<Key ID="STR_MAR_Gemstone_Processing">
+            <Original>Gem Cutter</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Edelsteinschleifer</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Industrial_Market">
+            <Original>Industrial Market</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Industriemarkt</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
     </Package>
     <Package name="Crimes">
         <Key ID="STR_Crime_187V">
