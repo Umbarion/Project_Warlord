@@ -87,7 +87,7 @@
             <Spanish>Tienda de Buceo</Spanish>
             <Italian>Negozio Sub di Steve</Italian>
             <Russian></Russian>
-            <German>Steve's Taucherausrüstung</German>
+            <German>Taucherausrüstung</German>
             <Portuguese>Loja de equipamentos para Mergulho</Portuguese>
             <Polish>Sklep dla nurków</Polish>
         </Key>
@@ -125,11 +125,11 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>African Market</Original>
+            <Original>Market</Original>
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Afrikanischer Markt</German>
+            <German>Markt</German>
             <Italian></Italian>
             <French></French>
             <Portuguese></Portuguese>
@@ -2028,11 +2028,22 @@
             <Czech>Garáž Vehicle</Czech>
             <Spanish>Garaje de Vehículos</Spanish>
             <Russian></Russian>
-            <German>Fahrzeug Garage</German>
+            <German>Garage</German>
             <French>Garage de Vehicules</French>
             <Italian>Garage Veicoli</Italian>
             <Portuguese>Garagem de Veículos</Portuguese>
             <Polish>Garaż</Polish>
+        </Key>
+		<Key ID="STR_Hangar_Title">
+            <Original>Hangar</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Hangar</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_Garage_GetVehicle">
             <Original>Get Vehicle</Original>
@@ -10494,15 +10505,15 @@
             <Polish>Sklep odzieżowy EMS</Polish>
         </Key>
         <Key ID="STR_MAR_Helicopter_Garage">
-            <Original>Helicopter Garage</Original>
-            <Czech>vrtulník Garáž</Czech>
-            <French>Garage d'hélicoptère</French>
-            <Spanish>Garaje de Helicóptero</Spanish>
-            <Italian>Garage d'Elicotteri</Italian>
+            <Original>Hangar</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Italian></Italian>
             <Russian></Russian>
-            <German>Helikopter Hangar</German>
-            <Portuguese>Garagem Aérea</Portuguese>
-            <Polish>Hangar lotniczy</Polish>
+            <German>Hangar</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
         </Key>
         <Key ID="STR_MAR_W_Car_Garage">
             <Original>Car Garage</Original>
