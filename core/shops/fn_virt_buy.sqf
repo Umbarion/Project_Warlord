@@ -6,16 +6,13 @@
     Description:
     Buy a virtual item from the store.
 */
-private ["_type","_price","_amount","_diff","_hideout","_itemInfo"];
+private ["_type","_price","_amount","_hideout","_itemInfo"];
 if ((lbCurSel 2401) isEqualTo -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
-_diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 _amount = parseNumber(_amount);
-if (_diff <= 0) exitWith {hint localize "STR_NOTF_NoSpace"};
-_amount = _diff;
 private _altisArray = ["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"];
 private _tanoaArray = ["Land_School_01_F","Land_Warehouse_03_F","Land_House_Small_02_F"];
 private _hideoutObjs = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
