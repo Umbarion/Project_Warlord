@@ -32,6 +32,7 @@ if(isClass (configFile >> "CfgMagazines" >> _item))then {
 		}else{_return=false;};
 	};
 }else {
+	//if(isClass (configFile >> "CfgWeapons" >> _item))then {
 		if (_math) then {
 		//Lets add!
 			if ((player canAdd [_item, _num])) then {
@@ -51,5 +52,6 @@ if(isClass (configFile >> "CfgMagazines" >> _item))then {
 				_return=true
 			}else{_return=false;};
 		};
+	//};
 }
 _return;
