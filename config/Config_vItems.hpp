@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter"};
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "blastingcharge" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter" };
     };
 
     class wongs {
@@ -69,14 +69,14 @@ class VirtualShops {
         name = "STR_Shops_Oil";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_oil_processed", "PWA_pickaxe", "PWA_jerrycan_full" };
+        items[] = { "PWA_oil_processed", "PWA_oil_postprocessed", "PWA_coke_processed" , "PWA_jerrycan_full" };
     };
 
     class fishmarket {
         name = "STR_Shops_FishMarket";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_salema_raw", "salema", "PWA_ornate_raw", "ornate", "PWA_mackerel_raw", "mackerel", "PWA_tuna_raw", "tuna", "PWA_mullet_raw", "mullet", "PWA_catshark_raw", "catshark" };
+        items[] = { "PWA_salema_raw", "PWA_ornate_raw", "PWA_mackerel_raw", "PWA_tuna_raw", "PWA_mullet_raw", "PWA_catshark_raw"};
     };
 
     class glass {
@@ -90,14 +90,14 @@ class VirtualShops {
         name = "STR_Shops_Minerals";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_iron_processed", "PWA_copper_processed" };
+        items[] = { "PWA_iron_processed", "PWA_copper_processed", "PWA_platinum_processed" };
     };
 
     class diamond {
         name = "STR_Shops_Diamond";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_diamond_raw", "PWA_diamond_processed" };
+        items[] = { "PWA_ruby_processed", "PWA_diamond_processed" };
     };
 
     class salt {
@@ -188,12 +188,6 @@ class VirtualItems {
         sellPrice = 95000;
     };
 
-    class blastingcharge {
-        variable = "blastingCharge";
-        buyPrice = 35000;
-        sellPrice = 10000;
-    };
-
     class PWA_boltcutter {
         variable = "PWA_boltcutter";
         buyPrice = 7500;
@@ -230,6 +224,12 @@ class VirtualItems {
         buyPrice = -1;
         sellPrice = 3200;
     };
+	
+	class PWA_oil_postprocessed {
+        variable = "PWA_oil_postprocessed";
+        buyPrice = -1;
+        sellPrice = 4200;
+    };
 
     class PWA_copper_raw {
         variable = "PWA_copper_raw";
@@ -255,38 +255,26 @@ class VirtualItems {
         sellPrice = 3200;
     };
 
-    class salt_unrefined {
-        variable = "saltUnrefined";
+    class PWA_ruby_raw {
+        variable = "PWA_ruby_raw";
         buyPrice = -1;
-        sellPrice = -1;
+        sellPrice = 250;
     };
 
-    class salt_refined {
-        variable = "saltRefined";
+    class PWA_ruby_processed {
+        variable = "WA_ruby_processed";
         buyPrice = -1;
-        sellPrice = 1450;
+        sellPrice = 1400;
     };
-
-    class sand {
-        variable = "sand";
-        buyPrice = -1;
-        sellPrice = -1;
-    };
-
-    class glass {
-        variable = "glass";
-        buyPrice = -1;
-        sellPrice = 1450;
-    };
-
-    class PWA_diamond_raw {
-        variable = "diamondUncut";
+	
+	class PWA_diamond_raw {
+        variable = "PWA_diamond_raw";
         buyPrice = -1;
         sellPrice = 750;
     };
 
     class PWA_diamond_processed {
-        variable = "diamondCut";
+        variable = "PWA_diamond_processed";
         buyPrice = -1;
         sellPrice = 2000;
     };
@@ -303,6 +291,30 @@ class VirtualItems {
         sellPrice = 1950;
     };
 
+   class PWA_platinum_raw {
+        variable = "PWA_platinum_raw";
+        buyPrice = -1;
+        sellPrice = -1;
+    };
+
+    class PWA_platinum_processed {
+        variable = "PWA_platinum_processed";
+        buyPrice = -1;
+        sellPrice = 4000;
+    };
+	
+	class PWA_coke_raw {
+        variable = "PWA_coke_raw";
+        buyPrice = -1;
+        sellPrice = -1;
+    };
+
+    class PWA_coke_processed {
+        variable = "PWA_coke_processed";
+        buyPrice = -1;
+        sellPrice = 1700;
+    };
+	
     //Drugs
     class PWA_heroin_raw {
         variable = "PWA_heroin_raw";
