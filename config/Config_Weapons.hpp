@@ -66,7 +66,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_green", "", 2750, 1000, "" },
             { "10Rnd_762x54_Mag", "", 500, 100, "" },
             { "20Rnd_556x45_UW_mag", "", 1250, 1000, "" },
-            { "30Rnd_580x42_Mag_F", "", 1250, 1000, "" } //Apex DLC
+            { "30Rnd_580x42_Mag_F", "", 1250, 1000, "" }, //Apex DLC
 			{ "CUP_20Rnd_762x51_FNFAL_M", "", 4250, 1000, "" }
         };
         accs[] = {
