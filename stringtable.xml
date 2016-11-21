@@ -7079,6 +7079,17 @@
             <Portuguese></Portuguese>
             <Polish></Polish>
         </Key>
+		<Key ID="STR_License_Fuel">
+            <Original>Fuel Production License</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Treibstoffherstellung</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
 		<Key ID="STR_License_Adminshop">
             <Original>Underground Imports</Original>
             <Czech></Czech>
@@ -7837,6 +7848,17 @@
             <Spanish></Spanish>
             <Russian></Russian>
             <German>Hirse verarbeiten</German>
+            <French></French>
+            <Italian></Italian>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+        </Key>
+		<Key ID="STR_Process_Fuel">
+            <Original>Processing Fuel</Original>
+            <Czech></Czech>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Treibstoff herstellen</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -10681,6 +10703,17 @@
             <Italian></Italian>
         </Key>
 		<Key ID="STR_MAR_Industrial_Market">
+            <Original>Industrial Market</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
+            <Russian></Russian>
+            <German>Industriemarkt</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
+        </Key>
+		<Key ID="STR_MAR_Fuel_Processing">
             <Original>Industrial Market</Original>
             <Czech></Czech>
             <French></French>

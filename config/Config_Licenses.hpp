@@ -167,6 +167,13 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	class fuel {
+        variable = "fuel";
+        displayName = "STR_License_Fuel";
+        price = 45000;
+        illegal = false;
+        side = "civ";
+    };
 
     //Illegal Licenses
     class cocaine {

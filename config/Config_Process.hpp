@@ -132,4 +132,11 @@ class ProcessAction {
         //ScrollText = "Process Millet";
         NoLicenseCost = 500;
     };
+	class fuel {
+        MaterialsReq[] = {{"PWA_oil_processed",1}};
+        MaterialsGive[] = {{"PWA_oil_postprocessed",1}};
+        Text = "STR_Process_Fuel";
+        //ScrollText = "Process Fuel";
+        NoLicenseCost = 500;
+    };
 };
