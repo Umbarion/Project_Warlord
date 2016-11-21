@@ -100,7 +100,7 @@ class WeaponShops {
 
     //Basic Shops
     class genstore {
-        name = "Altis General Store";
+        name = "General Store";
         side = "civ";
         conditions = "";
         items[] = {
@@ -119,14 +119,19 @@ class WeaponShops {
             { "PWA_shovel", "", 100, 10, "" },
             { "PWA_secateurs", "", 100, 10, "" },
             { "PWA_prospectingtools", "", 100, 10, "" },
-            { "PWA_drillingequipment", "", 100, 10, "" }
+            { "PWA_drillingequipment", "", 100, 10, "" },
+			{ "ACE_fieldDressing", "", 10, 5, "" },
+			{ "ACE_elasticBandage", "", 10, 5, "" },
+			{ "ACE_packingBandage", "", 10, 5, "" },
+			{ "ACE_salineIV_250", "", 20, 10, "" },
+			{ "ACE_tourniquet", "", 30, 12, "" }
         };
         mags[] = {};
         accs[] = {};
     };
 
     class f_station_store {
-        name = "Altis Fuel Station Store";
+        name = "Fuel Station Store";
         side = "";
         conditions = "";
         items[] = {
@@ -145,7 +150,8 @@ class WeaponShops {
             { "PWA_shovel", "", 100, 10, "" },
             { "PWA_secateurs", "", 100, 10, "" },
             { "PWA_prospectingtools", "", 100, 10, "" },
-            { "PWA_drillingequipment", "", 100, 10, "" }
+            { "PWA_drillingequipment", "", 100, 10, "" },
+			{ "ACE_packingBandage", "", 10, 5, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -170,7 +176,12 @@ class WeaponShops {
             { "hgun_ACPC2_F", "", 17500, -1, "call life_coplevel >= 3" },
             { "arifle_MXC_F", "", 30000, 5000, "call life_coplevel >= 3" },
             // Snipers
-            { "srifle_DMR_07_blk_F", "", 32000, 5000, "call life_coplevel >= 3" } //Apex DLC
+            { "srifle_DMR_07_blk_F", "", 32000, 5000, "call life_coplevel >= 3" }, //Apex DLC
+			{ "ACE_fieldDressing", "", 10, 5, "" },
+			{ "ACE_elasticBandage", "", 10, 5, "" },
+			{ "ACE_packingBandage", "", 10, 5, "" },
+			{ "ACE_salineIV_250", "", 20, 10, "" },
+			{ "ACE_tourniquet", "", 30, 12, "" }
 
         };
         mags[] = {
@@ -200,7 +211,17 @@ class WeaponShops {
             { "ItemGPS", "", 100, 45, "" },
             { "Binocular", "", 150, -1, "" },
             { "FirstAidKit", "", 150, 65, "" },
-            { "NVGoggles", "", 1200, 980, "" }
+            { "ACE_atropine", "", 100, 50, "" },
+			{ "ACE_epinephrine", "", 100, 50, "" },
+			{ "ACE_morphine", "", 100, 50, "" },
+			{ "ACE_fieldDressing", "", 10, 5, "" },
+			{ "ACE_elasticBandage", "", 10, 5, "" },
+			{ "ACE_packingBandage", "", 10, 5, "" },
+			{ "ACE_salineIV_250", "", 20, 10, "" },
+			{ "ACE_salineIV", "", 40, 20, "" },
+			{ "ACE_personalAidKit", "", 20, 10, "" },
+			{ "ACE_surgicalKit", "", 120, 50, "" },
+			{ "ACE_tourniquet", "", 30, 12, "" }
         };
         mags[] = {};
         accs[] = {};
