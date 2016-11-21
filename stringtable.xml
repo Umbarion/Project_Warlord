@@ -7616,7 +7616,7 @@
             <Czech>zpracování ropy</Czech>
             <Spanish>Procesando Petróleo</Spanish>
             <Russian></Russian>
-            <German>Öl wird verarbeite</German>
+            <German>Erdöl verarbeiten</German>
             <French>Raffinage de Pétrole</French>
             <Italian>Raffinando il Petrolio</Italian>
             <Portuguese>Processando Petróleo</Portuguese>
@@ -7627,7 +7627,7 @@
             <Czech>řezání diamantů</Czech>
             <Spanish>Cortando Diamantes</Spanish>
             <Russian></Russian>
-            <German>Diamanten werden geschliffen</German>
+            <German>Diamanten schleifen</German>
             <French>Taillage de diamant</French>
             <Italian>Rifinendo diamanti</Italian>
             <Portuguese>Lapidando Diamante</Portuguese>
@@ -7638,7 +7638,7 @@
             <Czech>zpracování Opium</Czech>
             <Spanish>Procesando Opio</Spanish>
             <Russian></Russian>
-            <German>Heroin wird verarbeitet</German>
+            <German>Heroin verarbeiten</German>
             <French>Traitement d'Heroine</French>
             <Italian>Processando Eroina</Italian>
             <Portuguese>Processando Heroína</Portuguese>
@@ -7649,7 +7649,7 @@
             <Czech>Casting měděných ingotů</Czech>
             <Spanish>Fundiendo Lingotes de Cobre</Spanish>
             <Russian></Russian>
-            <German>Kupfer wird verarbeitet</German>
+            <German>Kupfer einschmelzen</German>
             <French>Fonte de Cuivre</French>
             <Italian>Processando in lingotti di Rame</Italian>
             <Portuguese>Processando Cobre</Portuguese>
@@ -7660,7 +7660,7 @@
             <Czech>Litiny ingoty</Czech>
             <Spanish>Fundiendo Lingotes de Hierro</Spanish>
             <Russian></Russian>
-            <German>Eisen wird verarbeitet</German>
+            <German>Eisen einschmelzen</German>
             <French>Fonte de fer</French>
             <Italian>Processando Ferro</Italian>
             <Portuguese>Processando Ferro</Portuguese>
@@ -7671,7 +7671,7 @@
             <Czech>zpracování Písek</Czech>
             <Spanish>Procesando Arena</Spanish>
             <Russian></Russian>
-            <German>Sand wird verarbeitet</German>
+            <German>Sand verarbeiten</German>
             <French>Fonte du Sable</French>
             <Italian>Processando Sabbia</Italian>
             <Portuguese>Processando Areia</Portuguese>
@@ -7682,7 +7682,7 @@
             <Czech>zpracování Salt</Czech>
             <Spanish>Procesando Sal</Spanish>
             <Russian></Russian>
-            <German>Salz wird verarbeitet</German>
+            <German>Salz verarbeiten</German>
             <French>Traitement du Sel</French>
             <Italian>Processando Sale</Italian>
             <Portuguese>Refinando Sal</Portuguese>
@@ -7693,7 +7693,7 @@
             <Czech>Zpracování listů koky</Czech>
             <Spanish>Procesando Hojas de Coca</Spanish>
             <Russian></Russian>
-            <German>Kokain wird verarbeitet</German>
+            <German>Kokain verarbeiten</German>
             <French>Traitement de Cocaine</French>
             <Italian>Processando Cocaina</Italian>
             <Portuguese>Processando Cocaína</Portuguese>
@@ -7704,7 +7704,7 @@
             <Czech>zpracování Marihuana</Czech>
             <Spanish>Procesando Marihuana</Spanish>
             <Russian></Russian>
-            <German>Marihuana wird verarbeitet</German>
+            <German>Marihuana verarbeiten</German>
             <French>Traitement de Marijuana</French>
             <Italian>Processando Marijuana</Italian>
             <Portuguese>Processando Maconha</Portuguese>
@@ -7715,7 +7715,7 @@
             <Czech>Míchání Cement</Czech>
             <Spanish>Mezclando Cemento</Spanish>
             <Russian></Russian>
-            <German>Zement wird gemischt</German>
+            <German>Zement verarbeiten</German>
             <French>Mélange de ciment</French>
             <Italian>Processando Cemento</Italian>
             <Portuguese>Misturando Cimento</Portuguese>
@@ -7792,7 +7792,7 @@
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Platin wird verarbeitet</German>
+            <German>Platin einschmelzen</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -7803,7 +7803,7 @@
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Rubin wird verarbeitet</German>
+            <German>Rubin schleifen</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -7814,7 +7814,7 @@
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Tabak wird verarbeitet</German>
+            <German>Tabak verarbeiten</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -7825,7 +7825,7 @@
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Kohle wird verarbeitet</German>
+            <German>Kohle verarbeiten</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -7836,7 +7836,7 @@
             <Czech></Czech>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Hirse wird verarbeitet</German>
+            <German>Hirse verarbeiten</German>
             <French></French>
             <Italian></Italian>
             <Portuguese></Portuguese>
@@ -8196,7 +8196,7 @@
             <Czech>zabavili zbraně</Czech>
             <Spanish>Confiscar Armas</Spanish>
             <Russian></Russian>
-            <German>Seize Waffen</German>
+            <German>Waffen beschlagnahmen</German>
             <French>Saisir les armes</French>
             <Italian>cogliere Armi</Italian>
             <Portuguese>Apreender Armas</Portuguese>
@@ -8350,7 +8350,7 @@
             <Czech>Store Vehicle</Czech>
             <Spanish>Guardar Vehiculo</Spanish>
             <Russian></Russian>
-            <German>Fahrzeug parken</German>
+            <German>Fahrzeug einparken</German>
             <French>Ranger le vehicule</French>
             <Italian>Parcheggia Veicolo</Italian>
             <Portuguese>Guardar Veículo</Portuguese>
@@ -8499,7 +8499,7 @@
             <Russian></Russian>
             <French>Fouiller Container</French>
             <Portuguese>Vasculhar Container</Portuguese>
-            <German>Container suchen</German>
+            <German>Container durchsuchen</German>
         </Key>
         <Key ID="STR_vInAct_PullOut">
             <Original>Pullout Players</Original>
@@ -9872,7 +9872,7 @@
             <French>Champs de Pétrole</French>
             <Spanish>Campo de Petróleo</Spanish>
             <Russian></Russian>
-            <German>Öl Felder</German>
+            <German>Ölfelder</German>
             <Portuguese>Campo de Petróleo</Portuguese>
             <Polish>Szyb naftowy</Polish>
             <Italian>Giacimento di Petrolio</Italian>
@@ -9883,7 +9883,7 @@
             <French>Champs de pavots</French>
             <Spanish>Campo de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Gras Plantage</German>
+            <German>Kannabisfelde</German>
             <Portuguese>Campo de Maconha</Portuguese>
             <Polish>Pole marihuany</Polish>
             <Italian>Campo di Marijuana</Italian>
@@ -9894,7 +9894,7 @@
             <French>Traitement du pavot</French>
             <Spanish>Procesador de Marihuana</Spanish>
             <Russian></Russian>
-            <German>Gras Verarbeitung</German>
+            <German>Kannabisverarbeitung</German>
             <Portuguese>Processador de Maconha</Portuguese>
             <Polish>Suszarnia marihuany</Polish>
             <Italian>Trattamento Marijuana</Italian>
@@ -9927,7 +9927,7 @@
             <French>Champ de Cocaine</French>
             <Spanish>Campo de Cocaína</Spanish>
             <Russian></Russian>
-            <German>Koks Plantage</German>
+            <German>Kokainfeld</German>
             <Portuguese>Campo de Cocaína</Portuguese>
             <Polish>Pole kokainy</Polish>
             <Italian>Campo di Cocaina</Italian>
@@ -9938,7 +9938,7 @@
             <French>Vendeur de pétrole</French>
             <Spanish>Comerciante de Petróleo</Spanish>
             <Russian></Russian>
-            <German>Öl Händler</German>
+            <German>Ölhändler</German>
             <Portuguese>Comprador de Petróleo</Portuguese>
             <Polish>Skup benzyny</Polish>
             <Italian>Vendita Olio</Italian>
@@ -9993,7 +9993,7 @@
             <French>Traitement de sable</French>
             <Spanish>Procesador de Arena</Spanish>
             <Russian></Russian>
-            <German>Sand Verarbeiter</German>
+            <German>Sandverarbeiter</German>
             <Portuguese>Processador de Areia</Portuguese>
             <Polish>Huta szkła</Polish>
             <Italian>Processo Sabbia</Italian>
@@ -10016,7 +10016,7 @@
             <Spanish>Campo de Opio</Spanish>
             <Italian>Opium Poppy Field</Italian>
             <Russian></Russian>
-            <German>Heroin Plantage</German>
+            <German>Heroinplantage</German>
             <Portuguese>Campo de Heroína</Portuguese>
             <Polish>Pole heroiny</Polish>
         </Key>
@@ -10027,7 +10027,7 @@
             <Spanish>Procesador de Heroina</Spanish>
             <Italian>Processing eroina</Italian>
             <Russian></Russian>
-            <German>Heroin Verarbeitung</German>
+            <German>Heroinverarbeitung</German>
             <Portuguese>Processador de Heroína</Portuguese>
             <Polish>Oczyszczanie heroiny</Polish>
         </Key>
@@ -10054,15 +10054,15 @@
             <Italian>Banca Federale</Italian>
         </Key>
         <Key ID="STR_MAR_Highway_Patrol">
-            <Original>Highway Patrol Outpost</Original>
-            <Czech>Dálniční hlídka Outpost</Czech>
-            <French>Poste de Police</French>
-            <Spanish>Puesto de Patrulla de Carretera</Spanish>
+            <Original>Militia Base</Original>
+            <Czech></Czech>
+            <French></French>
+            <Spanish></Spanish>
             <Russian></Russian>
-            <German>Mautstation</German>
-            <Portuguese>Base da Polícia Rodoviária</Portuguese>
-            <Polish>Posterunek policji drogowej</Polish>
-            <Italian>Checkpoint di polizia</Italian>
+            <German>Milizbasis</German>
+            <Portuguese></Portuguese>
+            <Polish></Polish>
+            <Italian></Italian>
         </Key>
         <Key ID="STR_MAR_Rock_Quarry">
             <Original>Rock Quarry</Original>
@@ -10081,7 +10081,7 @@
             <French>Traitement de pierres</French>
             <Spanish>Procesador de Piedra</Spanish>
             <Russian></Russian>
-            <German>Stein Verarbeitung</German>
+            <German>Steinverarbeitung</German>
             <Portuguese>Processador de Pedra</Portuguese>
             <Polish>Wytwórnia cementu z kamienia</Polish>
             <Italian>Processo Roccia</Italian>
@@ -10092,7 +10092,7 @@
             <French>Vendeur de ciments</French>
             <Spanish>Comerciante de Cemento</Spanish>
             <Russian></Russian>
-            <German>Zement Händler</German>
+            <German>Zementhändler</German>
             <Portuguese>Comprador de Cimento</Portuguese>
             <Polish>Skup cementu</Polish>
             <Italian>Vendita del Cemento</Italian>
@@ -10114,7 +10114,7 @@
             <French>Dealer de Tortues</French>
             <Spanish>Traficante de Tortugas</Spanish>
             <Russian></Russian>
-            <German>Schildkröten Händler</German>
+            <German>Schildkrötenhändler</German>
             <Portuguese>Comprador de Tartarugas</Portuguese>
             <Polish>Skup żółwi</Polish>
             <Italian>Vendita Tartarughe</Italian>
@@ -10147,7 +10147,7 @@
             <French>Cachette 1</French>
             <Spanish>Escondite de Pandillas 1</Spanish>
             <Russian></Russian>
-            <German>Gang Versteck 1</German>
+            <German>Gangversteck 1</German>
             <Portuguese>Esconderijo de Gangs 1</Portuguese>
             <Polish>Kryjówka gangu 1</Polish>
             <Italian>Covo Gang 1</Italian>
@@ -10158,7 +10158,7 @@
             <French>Cachette 2</French>
             <Spanish>Escondite de Pandillas 2</Spanish>
             <Russian></Russian>
-            <German>Gang Versteck 2</German>
+            <German>Gangversteck 2</German>
             <Portuguese>Esconderijo de Gangs 2</Portuguese>
             <Polish>Kryjówka gangu 2</Polish>
             <Italian>Covo Gang 2</Italian>
@@ -10169,7 +10169,7 @@
             <French>Cachette 3</French>
             <Spanish>Escondite de Pandillas 3</Spanish>
             <Russian></Russian>
-            <German>Gang Versteck 3</German>
+            <German>Gangversteck 3</German>
             <Portuguese>Esconderijo de Gangs 3</Portuguese>
             <Polish>Kryjówka gangu 3</Polish>
             <Italian>Covo Gang 3</Italian>
@@ -10180,7 +10180,7 @@
             <French>Terrain de chasse</French>
             <Spanish>Zona de Caza</Spanish>
             <Russian></Russian>
-            <German>Jagtgründe</German>
+            <German>Jagdgründe</German>
             <Portuguese>Área de Caça</Portuguese>
             <Polish>Strefa polowań</Polish>
             <Italian>Riserva di Caccia</Italian>
@@ -10214,7 +10214,7 @@
             <Spanish>Tienda de Helicópteros</Spanish>
             <Italian>Elicottero negozio</Italian>
             <Russian></Russian>
-            <German>Verkäufer für Heli's</German>
+            <German>Helikopterhändler</German>
             <Portuguese>Loja de Helicópteros</Portuguese>
             <Polish>Sklep lotniczy</Polish>
         </Key>
@@ -10236,7 +10236,7 @@
             <Spanish>Mercado Rebelde</Spanish>
             <Italian>mercato Rebel</Italian>
             <Russian></Russian>
-            <German>Rebellen Markt</German>
+            <German>Rebellenmarkt</German>
             <Portuguese>Mercado Rebelde</Portuguese>
             <Polish>Market rebelianta</Polish>
         </Key>
@@ -10500,7 +10500,7 @@
             <Spanish>Tienda de Ropa de Médico</Spanish>
             <Italian>Uniformi EMS</Italian>
             <Russian></Russian>
-            <German>EMS Kleidungs-System</German>
+            <German>EMS Kleidungsshop</German>
             <Portuguese>EMS Roupa Loja</Portuguese>
             <Polish>Sklep odzieżowy EMS</Polish>
         </Key>
@@ -10521,7 +10521,7 @@
             <French>Garage de voiture</French>
             <Spanish>Garaje de Coches</Spanish>
             <Russian></Russian>
-            <German>Fahrzeug Garage</German>
+            <German>Fahrzeuggarage</German>
             <Portuguese>Garagem de Carros</Portuguese>
             <Polish>Hangar lotniczy</Polish>
             <Italian>Garage Automobili</Italian>
@@ -10532,7 +10532,7 @@
             <French>Payer la caution</French>
             <Spanish>Pagar Fianza</Spanish>
             <Russian></Russian>
-            <German>Zahle Kaution</German>
+            <German>Kaution zahlen</German>
             <Portuguese>Pagar Fiança</Portuguese>
             <Polish>Zapłać kaucję</Polish>
             <Italian>Paga cauzione</Italian>
@@ -10543,7 +10543,7 @@
             <French></French>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Platin Mine</German>
+            <German>Platinmine</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>
@@ -10554,7 +10554,7 @@
             <French></French>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Platin Verarbeitung</German>
+            <German>Platinschmelze</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>
@@ -10565,18 +10565,18 @@
             <French></French>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Rubin Mine</German>
+            <German>Rubinmine</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>
         </Key>
         <Key ID="STR_MAR_Ruby_Processing">
-            <Original>Ruby Processing</Original>
+            <Original>Ruby Cutter</Original>
             <Czech></Czech>
             <French></French>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Rubin Verarbeitung</German>
+            <German>Rubinschleifer</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>
@@ -10609,7 +10609,7 @@
             <French></French>
             <Spanish></Spanish>
             <Russian></Russian>
-            <German>Kohle Mine</German>
+            <German>Kohlemine</German>
             <Portuguese></Portuguese>
             <Polish></Polish>
             <Italian></Italian>
