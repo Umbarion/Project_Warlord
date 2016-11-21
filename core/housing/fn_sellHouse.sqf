@@ -12,7 +12,7 @@ _house = param [0,objNull,[objNull]];
 _uid = getPlayerUID player;
 
 if (isNull _house) exitWith {};
-if (!(_house isKindOf "House_F")) exitWith {};
+if (!(_house isKindOf "House")) exitWith {};
 if (isNil {_house getVariable "house_owner"}) exitWith {hint localize "STR_House_noOwner";};
 closeDialog 0;
 

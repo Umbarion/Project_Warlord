@@ -44,7 +44,7 @@ if (_curTarget in life_hideoutBuildings) exitWith {
     hint localize "STR_House_Hideout";
 };
 
-if (_curTarget isKindOf "House_F" && playerSide isEqualTo west) exitWith {
+if (_curTarget isKindOf "House" && playerSide isEqualTo west) exitWith {
 
     private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
     private _altisArray = [16019.5,16952.9,0];

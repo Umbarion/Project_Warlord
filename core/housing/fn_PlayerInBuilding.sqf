@@ -45,7 +45,7 @@ _wallCheck_Back = lineIntersectsWith [_eyePosition,_wallBack,_unit,_unit,true];
 _wallCheck_Right = lineIntersectsWith [_eyePosition,_wallRight,_unit,_unit,true];
 _wallCheck_Left = lineIntersectsWith [_eyePosition,_wallLeft,_unit,_unit,true];
 
-if ((_roofCheck select 0) isKindOf "House_F") then {
+if ((_roofCheck select 0) isKindOf "House") then {
     {
         _index = (count _x) - 1;
         if (_index > -1) then {

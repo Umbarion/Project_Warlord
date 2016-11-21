@@ -30,7 +30,7 @@ if (life_spawn_point isEqualTo []) then {
         if (isNil {(call compile format ["%1",life_spawn_point select 0])}) then {
             if (["house",life_spawn_point select 0] call BIS_fnc_inString) then {
                 private ["_bPos","_house","_pos"];
-                _house = nearestObjects [getMarkerPos (life_spawn_point select 0),["House_F"],10] select 0;
+                _house = nearestObjects [getMarkerPos (life_spawn_point select 0),["House"],10] select 0;
                 _bPos = [_house] call life_fnc_getBuildingPositions;
 
                 if (_bPos isEqualTo []) exitWith {
