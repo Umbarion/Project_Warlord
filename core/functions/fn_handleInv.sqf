@@ -15,21 +15,41 @@ if (_item isEqualTo "" || _num isEqualTo 0) exitWith {false};
 
 //_var = ITEM_VARNAME(_item);
 
-
-if (_math) then {
-    //Lets add!
-    if ((player canAdd [_item, _num])) then {
-        player addMagazines [_item, _num];
-		_return=true;
-    } else {_return = false;};
-} else {
-    _value=({_x == _item} count magazines player);
-    if(_num<=_value)then{
-	    for "_i" from 1 to _num do {
-		player removeMagazine _item;
-	    };
-	    _return=true
-    }else{_return=false;};
-};
-
+if(isClass (configFile >> "CfgMagazines" >> _item))then {
+	if (_math) then {
+		//Lets add!
+		if ((player canAdd [_item, _num])) then {
+			player addMagazines [_item, _num];
+			_return=true;
+		} else {_return = false;};
+	} else {
+		_value=({_x == _item} count magazines player);
+		if(_num<=_value)then{
+			for "_i" from 1 to _num do {
+			player removeMagazine _item;
+			};
+			_return=true
+		}else{_return=false;};
+	};
+}else {
+		if (_math) then {
+		//Lets add!
+			if ((player canAdd [_item, _num])) then {
+				for "_i" from 1 to _num do {
+					player addItem _item;
+				};
+				_return=true;
+			} else {_return = false;};
+		} else {
+			_value=({_x == _item} count backpackItems player);
+			_value=_value+({_x == _item} count vestItems player);
+			_value=_value+({_x == _item} count uniformItems player);
+			if(_num<=_value)then{
+				for "_i" from 1 to _num do {
+				player removeItem _item;
+				};
+				_return=true
+			}else{_return=false;};
+		};
+}
 _return;
