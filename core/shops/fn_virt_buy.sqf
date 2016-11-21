@@ -2,8 +2,8 @@
 /*
     File: fn_virt_buy.sqf
     Author: Bryan "Tonic" Boardwine
-
-    Description:
+	Editor: Paini
+    Description: wtf oO
     Buy a virtual item from the store.
 */
 private ["_type","_price","_amount","_hideout","_itemInfo"];
@@ -20,7 +20,7 @@ if ((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDe
 life_action_delay = time;
 _itemInfo = [_type] call life_fnc_fetchCfgDetails;
 
-if ([true,_type,_amount] call life_fnc_handleInv) then {
+if ((player canAdd [_type, _amount])) then {
     if (!isNil "_hideout" && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") >= _price}) then {
         _action = [
             format [(localize "STR_Shop_Virt_Gang_FundsMSG")+ "<br/><br/>" +(localize "STR_Shop_Virt_Gang_Funds")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_Shop_Virt_YourFunds")+ " <t color='#8cff9b'>$%2</t>",
@@ -33,6 +33,7 @@ if ([true,_type,_amount] call life_fnc_handleInv) then {
         ] call BIS_fnc_guiMessage;
         if (_action) then {
             hint format [localize "STR_Shop_Virt_BoughtGang",_amount,_itemInfo select 1,[(_price * _amount)] call life_fnc_numberText];
+			[true,_type,_amount] call life_fnc_handleInv;
             _funds = group player getVariable "gang_bank";
             _funds = _funds - (_price * _amount);
             group player setVariable ["gang_bank",_funds,true];
@@ -44,13 +45,15 @@ if ([true,_type,_amount] call life_fnc_handleInv) then {
             };
 
         } else {
-            if ((_price * _amount) > CASH) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
+            if ((_price * _amount) > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney";};
             hint format [localize "STR_Shop_Virt_BoughtItem",_amount,_itemInfo select 1,[(_price * _amount)] call life_fnc_numberText];
-            CASH = CASH - _price * _amount;
+            [true,_type,_amount] call life_fnc_handleInv;
+			CASH = CASH - _price * _amount;
         };
     } else {
-        if ((_price * _amount) > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
+        if ((_price * _amount) > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney";};
         hint format [localize "STR_Shop_Virt_BoughtItem",_amount,_itemInfo select 1,[(_price * _amount)] call life_fnc_numberText];
+		[true,_type,_amount] call life_fnc_handleInv;
         CASH = CASH - _price * _amount;
     };
     [] call life_fnc_virt_update;
