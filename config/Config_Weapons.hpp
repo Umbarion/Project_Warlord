@@ -56,16 +56,18 @@ class WeaponShops {
             { "arifle_AKM_F", "", 22000, 7500, "" }, //Apex DLC
             { "arifle_ARX_blk_F", "", 22000, 7500, "" }, //Apex DLC
             { "arifle_SPAR_01_blk_F", "", 33000, 7500, "" }, //Apex DLC
-            { "arifle_CTAR_blk_F", "", 30000, 5000, "" } //Apex DLC
+            { "arifle_CTAR_blk_F", "", 30000, 5000, "" }, //Apex DLC
+			{ "CUP_arifle_FNFAL_railed", "", 72000, 30000, ""}
         };
         mags[] = {
-            { "30Rnd_556x45_Stanag", "", 300, 100, "" },
-            { "30Rnd_762x39_Mag_F", "", 300, 100, "" },
+            { "30Rnd_556x45_Stanag", "", 3000, 1000, "" },
+            { "30Rnd_762x39_Mag_F", "", 3000, 1000, "" },
             { "30Rnd_545x39_Mag_F", "", 300, 100, "" }, //Apex DLC
-            { "30Rnd_65x39_caseless_green", "", 275, 100, "" },
+            { "30Rnd_65x39_caseless_green", "", 2750, 1000, "" },
             { "10Rnd_762x54_Mag", "", 500, 100, "" },
-            { "20Rnd_556x45_UW_mag", "", 125, 100, "" },
-            { "30Rnd_580x42_Mag_F", "", 125, 100, "" } //Apex DLC
+            { "20Rnd_556x45_UW_mag", "", 1250, 1000, "" },
+            { "30Rnd_580x42_Mag_F", "", 1250, 1000, "" } //Apex DLC
+			{ "CUP_20Rnd_762x51_FNFAL_M", "", 4250, 1000, "" }
         };
         accs[] = {
             { "optic_ACO_grn", "", 3500, 100, "" },
