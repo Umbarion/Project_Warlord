@@ -13,28 +13,28 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_date_raw", "PWA_nuts_raw",  "PWA_millet_processed", "PWA_storagecrate_small", "PWA_storagecrate_big", "ACE_EarPlugs", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_personalAidKit", "ACE_tourniquet", "ACE_salineIV_250", "ACE_salineIV_500", "ACE_atropine", "ACE_epinephrine", "ACE_morphine" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_date_raw", "PWA_nuts_raw",  "PWA_millet_processed", "PWA_storagecrate_small", "PWA_storagecrate_big"};
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "PWA_waterbottle",  "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_defibrillator" , "ACE_EarPlugs", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_personalAidKit", "ACE_tourniquet", "ACE_salineIV_250", "ACE_salineIV_500", "ACE_atropine", "ACE_epinephrine", "ACE_morphine"};
+        items[] = { "PWA_waterbottle",  "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_defibrillator"};
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "ACE_EarPlugs", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage"};
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter"};
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "ACE_EarPlugs", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter"};
     };
 
     class wongs {
@@ -478,61 +478,5 @@ class VirtualItems {
         sellPrice = 1650;
     };
 	
-	//ACE-Items
-	class ACE_EarPlugs {						
-        variable = "ACE_EarPlugs";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_fieldDressing {
-        variable = "ACE_fieldDressing";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_elasticBandage {
-        variable = "ACE_elasticBandage";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_packingBandage {
-        variable = "ACE_packingBandage";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_tourniquet {
-        variable = "ACE_tourniquet";
-        buyPrice = 250;
-        sellPrice = 120;
-    };
-	class ACE_personalAidKit {
-        variable = "ACE_personalAidKit";
-        buyPrice = 1000;
-        sellPrice = 250;
-    };
-	class ACE_salineIV_250 {
-        variable = "ACE_salineIV_250";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_salineIV_500 {
-        variable = "ACE_salineIV_500";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_atropine {
-        variable = "ACE_atropine";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_epinephrine {
-        variable = "ACE_epinephrine";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
-	class ACE_morphine {
-        variable = "ACE_morphine";
-        buyPrice = 10;
-        sellPrice = 5;
-    };
 	
 };
