@@ -73,7 +73,8 @@ if (_hasLicense) then {
 			foreach _materialsGiven;
 		};
     };
-    "progressBar" cutText ["","PLAIN"];
+    
 }else{hint "Du hast keine Lizens.";}; 
+"progressBar" cutText ["","PLAIN"];
 life_is_processing = false; 
 life_action_inUse = false;
