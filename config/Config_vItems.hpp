@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_storagecrate_small", "PWA_storagecrate_big" };
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_date_raw", "PWA_nuts_raw",  "PWA_millet_processed", "PWA_storagecrate_small", "PWA_storagecrate_big" };
     };
 
     class med_market {
@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_cocaine_processed", "PWA_heroin_processed", "PWA_cannabis_processed" };
+        items[] = { "PWA_cocaine_processed", "PWA_heroin_processed", "PWA_cannabis_processed", "PWA_brownbrown_processed" };
     };
 
     class oil {
@@ -76,7 +76,7 @@ class VirtualShops {
         name = "STR_Shops_FishMarket";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_salema_raw", "PWA_ornate_raw", "PWA_mackerel_raw", "PWA_tuna_raw", "PWA_mullet_raw", "PWA_catshark_raw"};
+        items[] = { "PWA_salema_raw", "PWA_ornate_raw", "PWA_mackerel_raw", "PWA_tuna_raw", "PWA_mullet_raw", "PWA_catshark_raw", "PWA_bluecrab_raw", "PWA_snowcrab_raw","PWA_kingcrab_raw"};
     };
 
     class glass {
@@ -185,7 +185,7 @@ class VirtualItems {
     class PWA_gold_processed {
         variable = "PWA_gold_processed";
         buyPrice = -1;
-        sellPrice = 95000;
+        sellPrice = 17500;
     };
 
     class PWA_boltcutter {
@@ -325,8 +325,8 @@ class VirtualItems {
 
     class PWA_heroin_processed {
         variable = "PWA_heroin_processed";
-        buyPrice = 3500;
-        sellPrice = 2560;
+        buyPrice = 7120;
+        sellPrice = 3560;
     };
 
     class PWA_cannabis_raw {
@@ -338,8 +338,8 @@ class VirtualItems {
 
     class PWA_cannabis_processed {
         variable = "PWA_cannabis_processed";
-        buyPrice = 2800;
-        sellPrice = 2350;
+        buyPrice = 2700;
+        sellPrice = 1350;
     };
 
     class PWA_cocaine_raw {
@@ -351,10 +351,16 @@ class VirtualItems {
 
     class PWA_cocaine_processed {
         variable = "PWA_cocaine_processed";
-        buyPrice = -1;
-        sellPrice = 5000;
+        buyPrice = 5060;
+        sellPrice = 2530;
     };
 
+    class PWA_brownbrown_processed {
+        variable = "PWA_brownbrown_processed";
+        buyPrice = 9500;
+        sellPrice = 4750;
+    };
+	
     //Drink
     class PWA_energydrink {
         variable = "PWA_energydrink";
@@ -374,19 +380,32 @@ class VirtualItems {
         sellPrice = 5;
     };
 
-    //Food
-    class apple {
-        variable = "apple";
-        buyPrice = 65;
-        sellPrice = 50;
-    };
+    //Food + Plants
 
-    class peach {
-        variable = "peach";
-        buyPrice = 68;
-        sellPrice = 55;
+	class PWA_date_raw {
+        variable = "PWA_date_raw";
+        buyPrice = -1;
+        sellPrice = 250;
     };
-
+	
+	class PWA_nuts_raw {
+        variable = "PWA_nuts_raw";
+        buyPrice = -1;
+        sellPrice = 265;
+    };
+	
+	class PWA_millet_raw {
+        variable = "PWA_millet_raw";
+        buyPrice = -1;
+        sellPrice = -1;
+    };
+	
+	class PWA_millet_processed {
+        variable = "PWA_millet_processed";
+        buyPrice = -1;
+        sellPrice = 375;
+    };
+	
     class PWA_beefjerky {
         variable = "PWA_beefjerky";
         buyPrice = 75;
@@ -399,28 +418,10 @@ class VirtualItems {
         sellPrice = 60;
     };
 
-    class rabbit_raw {
-        variable = "rabbitRaw";
-        buyPrice = -1;
-        sellPrice = 95;
-    };
-
-    class rabbit {
-        variable = "rabbit";
-        buyPrice = 150;
-        sellPrice = 115;
-    };
-
     class PWA_salema_raw{
         variable = "PWA_salema_raw";
         buyPrice = -1;
         sellPrice = 45;
-    };
-
-    class salema {
-        variable = "salema";
-        buyPrice = 75;
-        sellPrice = 55;
     };
 
     class PWA_ornate_raw {
@@ -429,34 +430,16 @@ class VirtualItems {
         sellPrice = 40;
     };
 
-    class ornate {
-        variable = "ornate";
-        buyPrice = 175;
-        sellPrice = 150;
-    };
-
     class PWA_mackerel_raw {
         variable = "PWA_mackerel_raw";
         buyPrice = -1;
         sellPrice = 175;
     };
 
-    class mackerel {
-        variable = "mackerel";
-        buyPrice = 250;
-        sellPrice = 200;
-    };
-
-    class PWA_tuna_raw {
+     class PWA_tuna_raw {
         variable = "PWA_tuna_raw";
         buyPrice = -1;
         sellPrice = 700;
-    };
-
-    class tuna {
-        variable = "tuna";
-        buyPrice = 1250;
-        sellPrice = 1000;
     };
 
     class PWA_mullet_raw {
@@ -465,81 +448,33 @@ class VirtualItems {
         sellPrice = 250;
     };
 
-    class mullet {
-        variable = "mullet";
-        buyPrice = 600;
-        sellPrice = 400;
-    };
-
     class PWA_catshark_raw {
         variable = "PWA_catshark_raw";
         buyPrice = -1;
         sellPrice = 300;
     };
 
-    class catshark {
-        variable = "catshark";
-        buyPrice = 750;
-        sellPrice = 500;
-    };
-
-    class turtle_raw {
-        variable = "turtleRaw";
+	class PWA_bluecrab_raw {
+        variable = "PWA_bluecrab_raw";
         buyPrice = -1;
-        sellPrice = 3000;
+        sellPrice = 950;
     };
-
-    class turtle_soup {
-        variable = "turtleSoup";
-        buyPrice = 1000;
-        sellPrice = 750;
-    };
-
-    class hen_raw {
-        variable = "henRaw";
+	
+	class PWA_snowcrab_raw {
+        variable = "PWA_snowcrab_raw";
         buyPrice = -1;
-        sellPrice = 65;
+        sellPrice = 1250;
     };
-
-    class hen {
-        variable = "hen";
-        buyPrice = 115;
-        sellPrice = 85;
-    };
-
-    class rooster_raw {
-        variable = "roosterRaw";
+	
+	class PWA_kingcrab_raw {
+        variable = "PWA_kingcrab_raw";
         buyPrice = -1;
-        sellPrice = 65;
+        sellPrice = 1400;
     };
-
-    class rooster {
-        variable = "rooster";
-        buyPrice = 90;
-        sellPrice = 85;
-    };
-
-    class sheep_raw {
-        variable = "sheepRaw";
+	
+	class PWA_lobster_raw {
+        variable = "PWA_lobster_raw";
         buyPrice = -1;
-        sellPrice = 95;
-    };
-
-    class sheep {
-        variable = "sheep";
-        buyPrice = 155;
-        sellPrice = 115;
-    };
-
-    class goat_raw {
-        variable = "goatRaw";
-        buyPrice = -1;
-        sellPrice = 115;
-    };
-
-    class goat {
-        variable = "goat";
-        buyPrice = 175;
-        sellPrice = 135;
+        sellPrice = 1650;
     };
 };
