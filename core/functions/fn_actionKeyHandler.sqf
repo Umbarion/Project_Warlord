@@ -66,7 +66,7 @@ private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
 private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 
-if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((nearestObject [_pos,"Land_Dome_Big_F"]) isEqualTo _curObject || (nearestObject [_pos,_vaultHouse]) isEqualTo _curObject)) exitWith {
+if (_curObject isKindOf "House" && {player distance _curObject < 12} || ((nearestObject [_pos,"Land_Dome_Big_F"]) isEqualTo _curObject || (nearestObject [_pos,_vaultHouse]) isEqualTo _curObject)) exitWith {
     [_curObject] call life_fnc_houseMenu;
 };
 
