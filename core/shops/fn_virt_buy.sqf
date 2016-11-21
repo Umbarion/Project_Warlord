@@ -21,7 +21,7 @@ life_action_delay = time;
 _itemInfo = [_type] call life_fnc_fetchCfgDetails;
 
 if ((player canAdd [_type, _amount])) then {
-    if (!isNil "_hideout" && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") >= _price}) then {
+    if (!isNull "_hideout" && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") >= _price}) then {
         _action = [
             format [(localize "STR_Shop_Virt_Gang_FundsMSG")+ "<br/><br/>" +(localize "STR_Shop_Virt_Gang_Funds")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_Shop_Virt_YourFunds")+ " <t color='#8cff9b'>$%2</t>",
                 [(group player getVariable "gang_bank")] call life_fnc_numberText,
