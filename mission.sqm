@@ -370,6 +370,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -384,24 +402,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1172,7 +1172,7 @@ class Mission
 			text="DP 8";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=109.36881;
+			angle=109.3688;
 			id=82;
 		};
 		class Item68
@@ -1551,7 +1551,7 @@ class Mission
 			text="@STR_MAR_DMV";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=185.51253;
+			angle=185.51251;
 			id=124;
 			atlOffset=15.600712;
 		};
@@ -2037,7 +2037,7 @@ class Mission
 			position[]={4258.3843,181.38893,6576.1152};
 			name="medic_spawn_2";
 			type="Empty";
-			angle=223.8954;
+			angle=223.89539;
 			id=179;
 			atlOffset=161.1608;
 		};
@@ -33039,7 +33039,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
