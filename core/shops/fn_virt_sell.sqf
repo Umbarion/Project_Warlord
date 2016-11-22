@@ -6,16 +6,24 @@
     Description:
     Sell a virtual item to the store / shop
 */
-private ["_type","_index","_price","_amount","_itemInfo"];
+private ["_type","_index","_price","_amount","_itemInfo","_val"];
 if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+_ext=false;
 if (_price isEqualTo -1) exitWith {};
 
 _amount = ctrlText 2405;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _amount = parseNumber (_amount);
-if (_amount > ({_x == _type} count magazines player)) exitWith {hint localize "STR_Shop_Virt_NotEnough"};
+if(isClass (configFile >> "CfgMagazines" >> _type))then {		
+	_val=({_x == _type} count magazines player)
+}else{
+	_val=({_x == _type} count backpackItems player);
+	_val=_val+({_x == _type} count vestItems player);
+	_val=_val+({_x == _type} count uniformItems player);	
+};
+if(_amount>_val)exitWith {hint localize "STR_Shop_Virt_NotEnough"};
 if ((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDelay";};
 life_action_delay = time;
 
