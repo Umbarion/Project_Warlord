@@ -58,6 +58,8 @@ if ((player canAdd [_type, _amount])) then {
         CASH = CASH - _price * _amount;
     };
     [] call life_fnc_virt_update;
+}else{
+	hint localize "STR_NOTF_NoSpace";
 };
 
 [0] call SOCK_fnc_updatePartial;
