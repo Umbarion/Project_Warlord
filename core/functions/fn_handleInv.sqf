@@ -53,5 +53,5 @@ if(isClass (configFile >> "CfgMagazines" >> _item))then {
 			}else{_return=false;};
 		};
 	//};
-}
+};
 _return;
