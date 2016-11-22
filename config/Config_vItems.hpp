@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_date_raw", "PWA_nuts_raw",  "PWA_millet_processed", "PWA_storagecrate_small", "PWA_storagecrate_big"};
+        items[] = { "arifle_TRG20_F","30Rnd_556x45_Stanag","ACE_fieldDressing","PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_date_raw", "PWA_nuts_raw",  "PWA_millet_processed", "PWA_storagecrate_small", "PWA_storagecrate_big"};
     };
 
     class med_market {
@@ -145,7 +145,21 @@ class VirtualItems {
     //Virtual Items
 
     //Misc
-
+	class arifle_TRG20_F {
+        variable = "arifle_TRG20_F";
+        buyPrice = 900;
+        sellPrice = 450;
+    };
+	class 30Rnd_556x45_Stanag {
+        variable = "30Rnd_556x45_Stanag";
+        buyPrice = 900;
+        sellPrice = 450;
+    };
+	class ACE_fieldDressing {
+        variable = "ACE_fieldDressing";
+        buyPrice = 900;
+        sellPrice = 450;
+    };
     class PWA_defibrillator {
         variable = "PWA_defibrillator";
         buyPrice = 900;
