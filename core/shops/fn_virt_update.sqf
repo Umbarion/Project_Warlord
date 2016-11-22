@@ -33,9 +33,14 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 } forEach _shopItems;
 
 {
-    
-    _itemx=_x;
-    _val = ({_x == _itemx} count magazines player);
+	_itemx=_x;
+    if(isClass (configFile >> "CfgMagazines" >> _x))then {		
+		_val = ({_x == _itemx} count magazines player);
+	}else{
+		_val=({_x == _itemx} count backpackItems player);
+		_val=_val+({_x == _itemx} count vestItems player);
+		_val=_val+({_x == _itemx} count uniformItems player);
+	};	
 
     if (_val > 0) then {
 		_gearInfo = [_x] call life_fnc_fetchCfgDetails;
