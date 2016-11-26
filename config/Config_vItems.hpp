@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter"};
+        items[] = { "PWA_waterbottle", "PWA_energydrink", "PWA_beefjerky", "PWA_toolkit", "PWA_jerrycan_full", "PWA_boltcutter", "CUP_arifle_FNFAL_railed", "CUP_20Rnd_762x51_FNFAL_M", "optic_ACO_grn" };
     };
 
     class gang {
@@ -227,11 +227,6 @@ class VirtualItems {
     };
 
     //Mined Items
-    class oil_unprocessed {
-        variable = "oilUnprocessed";
-        buyPrice = -1;
-        sellPrice = -1;
-    };
 
     class PWA_oil_processed {
         variable = "PWA_oil_processed";
@@ -492,5 +487,23 @@ class VirtualItems {
         sellPrice = 1650;
     };
 	
-	
+// Weapons and Magazines
+	class CUP_arifle_FNFAL_railed {
+        variable = "CUP_arifle_FNFAL_railed";
+        buyPrice = 72000;
+        sellPrice = 32000;
+    };
+	class CUP_20Rnd_762x51_FNFAL_M {
+        variable = "CUP_20Rnd_762x51_FNFAL_M";
+        buyPrice = 1200;
+        sellPrice = 500;
+    };
+
+//Attachments (Scopes e)
+	class optic_ACO_grn {
+        variable = "optic_ACO_grn";
+        buyPrice = 400;
+        sellPrice = 200;
+    };
+
 };
