@@ -19,7 +19,15 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" },
+            { "PWA_CUP_C_Datsun", "" },
+			{ "PWA_CUP_C_Datsun_4seat", "" },
+			{ "PWA_CUP_C_Datsun_Plain", "" },
+			{ "PWA_CUP_C_Datsun_Covered", "" },
+			{ "PWA_CUP_C_Datsun_Tubeframe", "" },
+			{ "PWA_CUP_C_Skoda_Blue_CIV", "" },
+			{ "PWA_CUP_C_Skoda_Green_CIV", "" },
+			{ "PWA_CUP_C_Skoda_Red_CIV", "" },
+			{ "PWA_CUP_C_Skoda_White_CIV", "" },
             { "C_Hatchback_01_F", "" },
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
@@ -44,7 +52,8 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "C_Van_01_box_F", "" },
+            { "PWA_CUP_C_V3S_Open_TKC", "" },
+			{ "PWA_CUP_C_V3S_Covered_TKC", "" },
             { "I_Truck_02_transport_F", "" },
             { "I_Truck_02_covered_F", "" },
             { "B_Truck_01_transport_F", "" },
@@ -756,4 +765,87 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
+
+//CUP-Vehicles (Cars, Trucks, Helicopters etc.)
+	// Cars
+	class PWA_CUP_C_Datsun {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Datsun_4seat {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Datsun_Plain {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Datsun_Covered {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Datsun_Tubeframe {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Skoda_Blue_CIV {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2750;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Skoda_Red_CIV {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2750;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Skoda_Green_CIV {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2750;
+        textures[] = {};
+    };
+	class PWA_CUP_C_Skoda_White_CIV {
+        vItemSpace = 50;
+        vFuelSpace = 1000;
+        conditions = "";
+        price = 2750;
+        textures[] = {};
+    };
+	
+	//Trucks
+	class PWA_CUP_C_V3S_Open_TKC {
+        vItemSpace = 50;
+        vFuelSpace = 3000;
+        conditions = "";
+        price = 12750;
+        textures[] = {};
+    };
+	class PWA_CUP_C_V3S_Covered_TKC {
+        vItemSpace = 50;
+        vFuelSpace = 3000;
+        conditions = "";
+        price = 12750;
+        textures[] = {};
+    };
+	
 };
