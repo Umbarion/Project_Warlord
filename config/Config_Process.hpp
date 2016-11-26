@@ -96,6 +96,7 @@ class ProcessAction {
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
     };
+	
 	//custom materials Project Warlord
 	class platinum {
         MaterialsReq[] = {{"PWA_platinum_raw",1}};
@@ -104,6 +105,7 @@ class ProcessAction {
         //ScrollText = "Process Platinum";
         NoLicenseCost = 1500;
     };
+	
 	class ruby {
         MaterialsReq[] = {{"PWA_ruby_raw",1}};
         MaterialsGive[] = {{"PWA_ruby_processed",2}};
@@ -111,6 +113,7 @@ class ProcessAction {
         //ScrollText = "Process Ruby";
         NoLicenseCost = 1200;
     };
+	
 	class cigarettes {
         MaterialsReq[] = {{"PWA_cigarettes_raw",1}};
         MaterialsGive[] = {{"PWA_cigarettes_processed",1}};
@@ -118,6 +121,7 @@ class ProcessAction {
         //ScrollText = "Process Cigarettes";
         NoLicenseCost = 700;
     };
+	
 	class coke {
         MaterialsReq[] = {{"PWA_coke_raw",1}};
         MaterialsGive[] = {{"PWA_coke_processed",3}};
@@ -125,6 +129,7 @@ class ProcessAction {
         //ScrollText = "Process Coke";
         NoLicenseCost = 1500;
     };
+	
 	class millet {
         MaterialsReq[] = {{"PWA_millet_raw",1}};
         MaterialsGive[] = {{"PWA_millet_processed",1}};
@@ -132,6 +137,7 @@ class ProcessAction {
         //ScrollText = "Process Millet";
         NoLicenseCost = 500;
     };
+	
 	class fuel {
         MaterialsReq[] = {{"PWA_oil_processed",1}};
         MaterialsGive[] = {{"PWA_oil_postprocessed",1}};
