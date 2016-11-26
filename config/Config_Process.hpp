@@ -27,7 +27,7 @@ class ProcessAction {
 
     class diamond {
         MaterialsReq[] = {{"PWA_diamond_raw",1}};
-        MaterialsGive[] = {{"PWA_diamond_processed",1}};
+        MaterialsGive[] = {{"PWA_diamond_processed",2}};
         Text = "STR_Process_Diamond";
         //ScrollText = "Cut Diamonds";
         NoLicenseCost = 1350;
@@ -35,7 +35,7 @@ class ProcessAction {
 
     class heroin {
         MaterialsReq[] = {{"PWA_heroin_raw",1}};
-        MaterialsGive[] = {{"PWA_heroin_processed",1}};
+        MaterialsGive[] = {{"PWA_heroin_processed",2}};
         Text = "STR_Process_Heroin";
         //ScrollText = "Process Heroin";
         NoLicenseCost = 1750;
@@ -43,7 +43,7 @@ class ProcessAction {
 
     class copper {
         MaterialsReq[] = {{"PWA_copper_raw",1}};
-        MaterialsGive[] = {{"PWA_copper_processed",1}};
+        MaterialsGive[] = {{"PWA_copper_processed",3}};
         Text = "STR_Process_Copper";
         //ScrollText = "Refine Copper";
         NoLicenseCost = 750;
@@ -51,7 +51,7 @@ class ProcessAction {
 
     class iron {
         MaterialsReq[] = {{"PWA_iron_raw",1}};
-        MaterialsGive[] = {{"PWA_iron_processed",1}};
+        MaterialsGive[] = {{"PWA_iron_processed",2}};
         Text = "STR_Process_Iron";
         //ScrollText = "Refine Iron";
         NoLicenseCost = 1120;
@@ -75,7 +75,7 @@ class ProcessAction {
 
     class cocaine {
         MaterialsReq[] = {{"PWA_cocaine_raw",1}};
-        MaterialsGive[] = {{"PWA_cocaine_processed",1}};
+        MaterialsGive[] = {{"PWA_cocaine_processed",2}};
         Text = "STR_Process_Cocaine";
         //ScrollText = "Process Cocaine";
         NoLicenseCost = 1500;
@@ -83,15 +83,15 @@ class ProcessAction {
 
     class marijuana {
         MaterialsReq[] = {{"PWA_cannabis_raw",1}};
-        MaterialsGive[] = {{"PWA_cannabis_processed",1}};
+        MaterialsGive[] = {{"PWA_cannabis_processed",3}};
         Text = "STR_Process_Marijuana";
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 500;
     };
 
-    class cement {
+    class cement {											//Stone
         MaterialsReq[] = {{"PWA_stone_raw",1}};
-        MaterialsGive[] = {{"PWA_stone_processed",1}};
+        MaterialsGive[] = {{"PWA_stone_processed",3}};
         Text = "STR_Process_Cement";
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
@@ -106,7 +106,7 @@ class ProcessAction {
     };
 	class ruby {
         MaterialsReq[] = {{"PWA_ruby_raw",1}};
-        MaterialsGive[] = {{"PWA_ruby_processed",1}};
+        MaterialsGive[] = {{"PWA_ruby_processed",2}};
         Text = "STR_Process_Ruby";
         //ScrollText = "Process Ruby";
         NoLicenseCost = 1200;
@@ -120,7 +120,7 @@ class ProcessAction {
     };
 	class coke {
         MaterialsReq[] = {{"PWA_coke_raw",1}};
-        MaterialsGive[] = {{"PWA_coke_processed",1}};
+        MaterialsGive[] = {{"PWA_coke_processed",3}};
         Text = "STR_Process_Coke";
         //ScrollText = "Process Coke";
         NoLicenseCost = 1500;
